@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_kgZT4Jz6Ee-Qh9rDZlDqUA" name="homework1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_khtigJz6Ee-Qh9rDZlDqUA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZzugYJz7Ee-yrZabrz2G_Q" name="Webpage">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8hoC0pz7Ee-yrZabrz2G_Q" name="webapplication" type="_kOSawJz7Ee-yrZabrz2G_Q" association="_8hmNoJz7Ee-yrZabrz2G_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8hrGIJz7Ee-yrZabrz2G_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8hsUQJz7Ee-yrZabrz2G_Q" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kOSawJz7Ee-yrZabrz2G_Q" name="Webapplication">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8htiYJz7Ee-yrZabrz2G_Q" name="webpage" type="_ZzugYJz7Ee-yrZabrz2G_Q" aggregation="composite" association="_8hmNoJz7Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tX0LEJz7Ee-yrZabrz2G_Q" name="LandingPage">
+    <generalization xmi:type="uml:Generalization" xmi:id="_RHRUUJ0AEe-yrZabrz2G_Q" general="_ZzugYJz7Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8hmNoJz7Ee-yrZabrz2G_Q" memberEnd="_8hoC0pz7Ee-yrZabrz2G_Q _8htiYJz7Ee-yrZabrz2G_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8hoC0Jz7Ee-yrZabrz2G_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8hoC0Zz7Ee-yrZabrz2G_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JYbWIJz8Ee-yrZabrz2G_Q" name="User"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KyHF4Jz8Ee-yrZabrz2G_Q" name="CartItem" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nVltcJz8Ee-yrZabrz2G_Q" name="Drinks">
+    <generalization xmi:type="uml:Generalization" xmi:id="_hYuwoJ0AEe-yrZabrz2G_Q" general="_EENjIJz_Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oeyxMJz8Ee-yrZabrz2G_Q" name="Food" isAbstract="true">
+    <generalization xmi:type="uml:Generalization" xmi:id="_inMu4J0AEe-yrZabrz2G_Q" general="_EENjIJz_Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9FP30Jz8Ee-yrZabrz2G_Q" name="InformationPage">
+    <generalization xmi:type="uml:Generalization" xmi:id="_STDyAJ0AEe-yrZabrz2G_Q" general="_ZzugYJz7Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BnwZsJz9Ee-yrZabrz2G_Q" name="ShoppingCart"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Fw6AYJz9Ee-yrZabrz2G_Q" name="Order"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QdUfwJz9Ee-yrZabrz2G_Q" name="Customer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_nMmzwJ0AEe-yrZabrz2G_Q" general="_JYbWIJz8Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SrQW8Jz9Ee-yrZabrz2G_Q" name="Employee">
+    <generalization xmi:type="uml:Generalization" xmi:id="_oen1QJ0AEe-yrZabrz2G_Q" general="_JYbWIJz8Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lst1sJz9Ee-yrZabrz2G_Q" name="ProductPage">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Xk6GIJ0AEe-yrZabrz2G_Q" general="_ZzugYJz7Ee-yrZabrz2G_Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_c7H84p0AEe-yrZabrz2G_Q" name="product" type="_EENjIJz_Ee-yrZabrz2G_Q" association="_c7GHsJ0AEe-yrZabrz2G_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c7Ij8J0AEe-yrZabrz2G_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c7Ij8Z0AEe-yrZabrz2G_Q" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ol8FkJz9Ee-yrZabrz2G_Q" name="BrowsingPage">
+    <generalization xmi:type="uml:Generalization" xmi:id="_UpW7AJ0AEe-yrZabrz2G_Q" general="_ZzugYJz7Ee-yrZabrz2G_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EENjIJz_Ee-yrZabrz2G_Q" name="Product"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_t8u5MJz_Ee-yrZabrz2G_Q" name="Payment"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_c7GHsJ0AEe-yrZabrz2G_Q" name="displays" memberEnd="_c7H84p0AEe-yrZabrz2G_Q _c7JLAJ0AEe-yrZabrz2G_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c7H84J0AEe-yrZabrz2G_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c7H84Z0AEe-yrZabrz2G_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_c7JLAJ0AEe-yrZabrz2G_Q" name="productpage" type="_lst1sJz9Ee-yrZabrz2G_Q" association="_c7GHsJ0AEe-yrZabrz2G_Q"/>
+  </packagedElement>
+</uml:Model>
