@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/homeworkPizza/src-gen" creationIcons="false" editDirectory="/homeworkPizza.edit/src-gen"
+    editorDirectory="/homeworkPizza.editor/src-gen" modelPluginID="homeworkPizza"
+    modelName="HomeworkPizza" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>homeworkPizza.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="HomeworkPizza" disposableProviderFactory="true" ecorePackage="homeworkPizza.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="homeworkPizza.ecore#//Category">
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/OnSale"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Vegan"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Vegetarian"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Meat"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Snacks"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/GlutenFree"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Dessert"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Softdrinks"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Category/Milkshake"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="homeworkPizza.ecore#//Status">
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Status/InPrepartion"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Status/Cancelled"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Status/InDelivery"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Status/ReadyForPickup"/>
+      <genEnumLiterals ecoreEnumLiteral="homeworkPizza.ecore#//Status/Completed"/>
+    </genEnums>
+    <genClasses ecoreClass="homeworkPizza.ecore#//BrowsingPage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//BrowsingPage/filter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//BrowsingPage/productpage"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//ProductPage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//ProductPage/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//ProductPage/rating"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//ProductPage/product"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//ShoppingCart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//ShoppingCart/totalPrice"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//ShoppingCart/discrount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//ShoppingCart/customer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//ShoppingCart/cartitem"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Product">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Product/productID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Product/price"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Product/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Product/inStock"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Product/cartitem"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="homeworkPizza.ecore#//Webpage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Webpage/URL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Webpage/title"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Customer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Customer/customerID"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Webapplication">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Webapplication/storemanagementsystem"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Webapplication/domain"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Webapplication/webpage"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="homeworkPizza.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//User/emailAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//User/name"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//CartItem">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//CartItem/extraWishes"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Employee">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Employee/employeeID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Employee/position"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//InformationPage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//InformationPage/text"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//LandingPage">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//LandingPage/welcomeMessage"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Order">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Order/isActive"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Order/status"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Order/address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Order/orderID"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Order/payment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Order/customer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Order/employee"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Store">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Store/storeID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Store/adress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Store/openingHours"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//Store/employee"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//Payment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Payment/creditCardInfomration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute homeworkPizza.ecore#//Payment/isSucessful"/>
+    </genClasses>
+    <genClasses ecoreClass="homeworkPizza.ecore#//StoreManagementSystem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//StoreManagementSystem/store"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//StoreManagementSystem/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference homeworkPizza.ecore#//StoreManagementSystem/order"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
