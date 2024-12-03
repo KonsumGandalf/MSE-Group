@@ -85,6 +85,8 @@ public class HomeworkPizzaShopFactoryImpl extends EFactoryImpl implements Homewo
 			return createPayment();
 		case HomeworkPizzaShopPackage.STORE_MANAGEMENT_SYSTEM:
 			return createStoreManagementSystem();
+		case HomeworkPizzaShopPackage.WEBSITE:
+			return createWebsite();
 		default:
 			throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -276,6 +278,17 @@ public class HomeworkPizzaShopFactoryImpl extends EFactoryImpl implements Homewo
 	public StoreManagementSystem createStoreManagementSystem() {
 		StoreManagementSystemImpl storeManagementSystem = new StoreManagementSystemImpl();
 		return storeManagementSystem;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Website createWebsite() {
+		WebsiteImpl website = new WebsiteImpl();
+		return website;
 	}
 
 	/**

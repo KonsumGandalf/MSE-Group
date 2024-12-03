@@ -9,18 +9,12 @@ import homeworkPizzaShop.Product;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,7 +115,7 @@ public class ProductImpl extends MinimalEObjectImpl.Container implements Product
 	protected boolean inStock = IN_STOCK_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getCartitem() <em>Cartitem</em>}' containment reference list.
+	 * The cached value of the '{@link #getCartitem() <em>Cartitem</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getCartitem()
@@ -253,24 +247,10 @@ public class ProductImpl extends MinimalEObjectImpl.Container implements Product
 	@Override
 	public EList<CartItem> getCartitem() {
 		if (cartitem == null) {
-			cartitem = new EObjectContainmentEList<CartItem>(CartItem.class, this,
+			cartitem = new EObjectResolvingEList<CartItem>(CartItem.class, this,
 					HomeworkPizzaShopPackage.PRODUCT__CARTITEM);
 		}
 		return cartitem;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-		case HomeworkPizzaShopPackage.PRODUCT__CARTITEM:
-			return ((InternalEList<?>) getCartitem()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

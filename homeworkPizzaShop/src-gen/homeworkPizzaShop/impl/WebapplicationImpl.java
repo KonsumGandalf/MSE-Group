@@ -5,23 +5,14 @@ package homeworkPizzaShop.impl;
 import homeworkPizzaShop.HomeworkPizzaShopPackage;
 import homeworkPizzaShop.StoreManagementSystem;
 import homeworkPizzaShop.Webapplication;
-import homeworkPizzaShop.Webpage;
-
-import java.util.Collection;
-
+import homeworkPizzaShop.Website;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,8 +23,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link homeworkPizzaShop.impl.WebapplicationImpl#getStoremanagementsystem <em>Storemanagementsystem</em>}</li>
- *   <li>{@link homeworkPizzaShop.impl.WebapplicationImpl#getDomain <em>Domain</em>}</li>
- *   <li>{@link homeworkPizzaShop.impl.WebapplicationImpl#getWebpage <em>Webpage</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.WebapplicationImpl#getWebsite <em>Website</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.WebapplicationImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -50,34 +41,34 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 	protected StoreManagementSystem storemanagementsystem;
 
 	/**
-	 * The default value of the '{@link #getDomain() <em>Domain</em>}' attribute.
+	 * The cached value of the '{@link #getWebsite() <em>Website</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDomain()
+	 * @see #getWebsite()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String DOMAIN_EDEFAULT = null;
+	protected Website website;
 
 	/**
-	 * The cached value of the '{@link #getDomain() <em>Domain</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDomain()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String domain = DOMAIN_EDEFAULT;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getWebpage() <em>Webpage</em>}' containment reference list.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWebpage()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Webpage> webpage;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,8 +152,8 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 	 * @generated
 	 */
 	@Override
-	public String getDomain() {
-		return domain;
+	public Website getWebsite() {
+		return website;
 	}
 
 	/**
@@ -170,27 +161,65 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public void setDomain(String newDomain) {
-		String oldDomain = domain;
-		domain = newDomain;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.WEBAPPLICATION__DOMAIN,
-					oldDomain, domain));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<Webpage> getWebpage() {
-		if (webpage == null) {
-			webpage = new EObjectContainmentEList<Webpage>(Webpage.class, this,
-					HomeworkPizzaShopPackage.WEBAPPLICATION__WEBPAGE);
+	public NotificationChain basicSetWebsite(Website newWebsite, NotificationChain msgs) {
+		Website oldWebsite = website;
+		website = newWebsite;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE, oldWebsite, newWebsite);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
 		}
-		return webpage;
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setWebsite(Website newWebsite) {
+		if (newWebsite != website) {
+			NotificationChain msgs = null;
+			if (website != null)
+				msgs = ((InternalEObject) website).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE, null, msgs);
+			if (newWebsite != null)
+				msgs = ((InternalEObject) newWebsite).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE, null, msgs);
+			msgs = basicSetWebsite(newWebsite, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE,
+					newWebsite, newWebsite));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.WEBAPPLICATION__NAME,
+					oldName, name));
 	}
 
 	/**
@@ -203,8 +232,8 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 		switch (featureID) {
 		case HomeworkPizzaShopPackage.WEBAPPLICATION__STOREMANAGEMENTSYSTEM:
 			return basicSetStoremanagementsystem(null, msgs);
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBPAGE:
-			return ((InternalEList<?>) getWebpage()).basicRemove(otherEnd, msgs);
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE:
+			return basicSetWebsite(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -219,10 +248,10 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 		switch (featureID) {
 		case HomeworkPizzaShopPackage.WEBAPPLICATION__STOREMANAGEMENTSYSTEM:
 			return getStoremanagementsystem();
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__DOMAIN:
-			return getDomain();
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBPAGE:
-			return getWebpage();
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE:
+			return getWebsite();
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__NAME:
+			return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -239,12 +268,11 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 		case HomeworkPizzaShopPackage.WEBAPPLICATION__STOREMANAGEMENTSYSTEM:
 			setStoremanagementsystem((StoreManagementSystem) newValue);
 			return;
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__DOMAIN:
-			setDomain((String) newValue);
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE:
+			setWebsite((Website) newValue);
 			return;
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBPAGE:
-			getWebpage().clear();
-			getWebpage().addAll((Collection<? extends Webpage>) newValue);
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__NAME:
+			setName((String) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -261,11 +289,11 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 		case HomeworkPizzaShopPackage.WEBAPPLICATION__STOREMANAGEMENTSYSTEM:
 			setStoremanagementsystem((StoreManagementSystem) null);
 			return;
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__DOMAIN:
-			setDomain(DOMAIN_EDEFAULT);
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE:
+			setWebsite((Website) null);
 			return;
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBPAGE:
-			getWebpage().clear();
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__NAME:
+			setName(NAME_EDEFAULT);
 			return;
 		}
 		super.eUnset(featureID);
@@ -281,10 +309,10 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 		switch (featureID) {
 		case HomeworkPizzaShopPackage.WEBAPPLICATION__STOREMANAGEMENTSYSTEM:
 			return storemanagementsystem != null;
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__DOMAIN:
-			return DOMAIN_EDEFAULT == null ? domain != null : !DOMAIN_EDEFAULT.equals(domain);
-		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBPAGE:
-			return webpage != null && !webpage.isEmpty();
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__WEBSITE:
+			return website != null;
+		case HomeworkPizzaShopPackage.WEBAPPLICATION__NAME:
+			return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -300,8 +328,8 @@ public class WebapplicationImpl extends MinimalEObjectImpl.Container implements 
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (domain: ");
-		result.append(domain);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

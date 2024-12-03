@@ -2,6 +2,8 @@
  */
 package homeworkPizzaShop;
 
+import org.eclipse.emf.common.util.EList;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Customer</b></em>'.
@@ -12,6 +14,7 @@ package homeworkPizzaShop;
  * </p>
  * <ul>
  *   <li>{@link homeworkPizzaShop.Customer#getCustomerID <em>Customer ID</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Customer#getCustomer <em>Customer</em>}</li>
  * </ul>
  *
  * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getCustomer()
@@ -40,5 +43,17 @@ public interface Customer extends User {
 	 * @generated
 	 */
 	void setCustomerID(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Customer</b></em>' containment reference list.
+	 * The list contents are of type {@link homeworkPizzaShop.Order}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Customer</em>' containment reference list.
+	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getCustomer_Customer()
+	 * @model containment="true" required="true"
+	 * @generated
+	 */
+	EList<Order> getCustomer();
 
 } // Customer

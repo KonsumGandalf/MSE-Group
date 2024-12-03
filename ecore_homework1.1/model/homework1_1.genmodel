@@ -22,7 +22,7 @@
       <genEnumLiterals ecoreEnumLiteral="homework1_1.ecore#//Category/Milkshake"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="homework1_1.ecore#//Status">
-      <genEnumLiterals ecoreEnumLiteral="homework1_1.ecore#//Status/LITERAL0"/>
+      <genEnumLiterals ecoreEnumLiteral="homework1_1.ecore#//Status/Open"/>
       <genEnumLiterals ecoreEnumLiteral="homework1_1.ecore#//Status/In%20Prepartion"/>
       <genEnumLiterals ecoreEnumLiteral="homework1_1.ecore#//Status/Cancelled"/>
       <genEnumLiterals ecoreEnumLiteral="homework1_1.ecore#//Status/In%20Delivery"/>

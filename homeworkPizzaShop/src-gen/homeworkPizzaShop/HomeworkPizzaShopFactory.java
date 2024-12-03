@@ -148,6 +148,15 @@ public interface HomeworkPizzaShopFactory extends EFactory {
 	StoreManagementSystem createStoreManagementSystem();
 
 	/**
+	 * Returns a new object of class '<em>Website</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Website</em>'.
+	 * @generated
+	 */
+	Website createWebsite();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

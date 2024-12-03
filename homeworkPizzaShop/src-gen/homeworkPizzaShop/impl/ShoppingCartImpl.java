@@ -3,7 +3,6 @@
 package homeworkPizzaShop.impl;
 
 import homeworkPizzaShop.CartItem;
-import homeworkPizzaShop.Customer;
 import homeworkPizzaShop.HomeworkPizzaShopPackage;
 import homeworkPizzaShop.ShoppingCart;
 
@@ -32,8 +31,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link homeworkPizzaShop.impl.ShoppingCartImpl#getTotalPrice <em>Total Price</em>}</li>
- *   <li>{@link homeworkPizzaShop.impl.ShoppingCartImpl#getDiscrount <em>Discrount</em>}</li>
- *   <li>{@link homeworkPizzaShop.impl.ShoppingCartImpl#getCustomer <em>Customer</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.ShoppingCartImpl#getDiscount <em>Discount</em>}</li>
  *   <li>{@link homeworkPizzaShop.impl.ShoppingCartImpl#getCartitem <em>Cartitem</em>}</li>
  * </ul>
  *
@@ -61,34 +59,24 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 	protected float totalPrice = TOTAL_PRICE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDiscrount() <em>Discrount</em>}' attribute.
+	 * The default value of the '{@link #getDiscount() <em>Discount</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDiscrount()
+	 * @see #getDiscount()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final float DISCROUNT_EDEFAULT = 0.0F;
+	protected static final float DISCOUNT_EDEFAULT = 0.0F;
 
 	/**
-	 * The cached value of the '{@link #getDiscrount() <em>Discrount</em>}' attribute.
+	 * The cached value of the '{@link #getDiscount() <em>Discount</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDiscrount()
+	 * @see #getDiscount()
 	 * @generated
 	 * @ordered
 	 */
-	protected float discrount = DISCROUNT_EDEFAULT;
-
-	/**
-	 * The cached value of the '{@link #getCustomer() <em>Customer</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCustomer()
-	 * @generated
-	 * @ordered
-	 */
-	protected Customer customer;
+	protected float discount = DISCOUNT_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getCartitem() <em>Cartitem</em>}' containment reference list.
@@ -149,8 +137,8 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 	 * @generated
 	 */
 	@Override
-	public float getDiscrount() {
-		return discrount;
+	public float getDiscount() {
+		return discount;
 	}
 
 	/**
@@ -159,64 +147,12 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 	 * @generated
 	 */
 	@Override
-	public void setDiscrount(float newDiscrount) {
-		float oldDiscrount = discrount;
-		discrount = newDiscrount;
+	public void setDiscount(float newDiscount) {
+		float oldDiscount = discount;
+		discount = newDiscount;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.SHOPPING_CART__DISCROUNT,
-					oldDiscrount, discrount));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Customer getCustomer() {
-		return customer;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetCustomer(Customer newCustomer, NotificationChain msgs) {
-		Customer oldCustomer = customer;
-		customer = newCustomer;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER, oldCustomer, newCustomer);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setCustomer(Customer newCustomer) {
-		if (newCustomer != customer) {
-			NotificationChain msgs = null;
-			if (customer != null)
-				msgs = ((InternalEObject) customer).eInverseRemove(this,
-						EOPPOSITE_FEATURE_BASE - HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER, null, msgs);
-			if (newCustomer != null)
-				msgs = ((InternalEObject) newCustomer).eInverseAdd(this,
-						EOPPOSITE_FEATURE_BASE - HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER, null, msgs);
-			msgs = basicSetCustomer(newCustomer, msgs);
-			if (msgs != null)
-				msgs.dispatch();
-		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER,
-					newCustomer, newCustomer));
+			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.SHOPPING_CART__DISCOUNT,
+					oldDiscount, discount));
 	}
 
 	/**
@@ -241,8 +177,6 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER:
-			return basicSetCustomer(null, msgs);
 		case HomeworkPizzaShopPackage.SHOPPING_CART__CARTITEM:
 			return ((InternalEList<?>) getCartitem()).basicRemove(otherEnd, msgs);
 		}
@@ -259,10 +193,8 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 		switch (featureID) {
 		case HomeworkPizzaShopPackage.SHOPPING_CART__TOTAL_PRICE:
 			return getTotalPrice();
-		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCROUNT:
-			return getDiscrount();
-		case HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER:
-			return getCustomer();
+		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCOUNT:
+			return getDiscount();
 		case HomeworkPizzaShopPackage.SHOPPING_CART__CARTITEM:
 			return getCartitem();
 		}
@@ -281,11 +213,8 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 		case HomeworkPizzaShopPackage.SHOPPING_CART__TOTAL_PRICE:
 			setTotalPrice((Float) newValue);
 			return;
-		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCROUNT:
-			setDiscrount((Float) newValue);
-			return;
-		case HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER:
-			setCustomer((Customer) newValue);
+		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCOUNT:
+			setDiscount((Float) newValue);
 			return;
 		case HomeworkPizzaShopPackage.SHOPPING_CART__CARTITEM:
 			getCartitem().clear();
@@ -306,11 +235,8 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 		case HomeworkPizzaShopPackage.SHOPPING_CART__TOTAL_PRICE:
 			setTotalPrice(TOTAL_PRICE_EDEFAULT);
 			return;
-		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCROUNT:
-			setDiscrount(DISCROUNT_EDEFAULT);
-			return;
-		case HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER:
-			setCustomer((Customer) null);
+		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCOUNT:
+			setDiscount(DISCOUNT_EDEFAULT);
 			return;
 		case HomeworkPizzaShopPackage.SHOPPING_CART__CARTITEM:
 			getCartitem().clear();
@@ -329,10 +255,8 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 		switch (featureID) {
 		case HomeworkPizzaShopPackage.SHOPPING_CART__TOTAL_PRICE:
 			return totalPrice != TOTAL_PRICE_EDEFAULT;
-		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCROUNT:
-			return discrount != DISCROUNT_EDEFAULT;
-		case HomeworkPizzaShopPackage.SHOPPING_CART__CUSTOMER:
-			return customer != null;
+		case HomeworkPizzaShopPackage.SHOPPING_CART__DISCOUNT:
+			return discount != DISCOUNT_EDEFAULT;
 		case HomeworkPizzaShopPackage.SHOPPING_CART__CARTITEM:
 			return cartitem != null && !cartitem.isEmpty();
 		}
@@ -352,8 +276,8 @@ public class ShoppingCartImpl extends MinimalEObjectImpl.Container implements Sh
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (totalPrice: ");
 		result.append(totalPrice);
-		result.append(", discrount: ");
-		result.append(discrount);
+		result.append(", discount: ");
+		result.append(discount);
 		result.append(')');
 		return result.toString();
 	}

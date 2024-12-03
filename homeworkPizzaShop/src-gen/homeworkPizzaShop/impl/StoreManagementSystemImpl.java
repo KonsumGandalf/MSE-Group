@@ -22,6 +22,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -61,7 +62,7 @@ public class StoreManagementSystemImpl extends MinimalEObjectImpl.Container impl
 	protected EList<User> user;
 
 	/**
-	 * The cached value of the '{@link #getOrder() <em>Order</em>}' containment reference list.
+	 * The cached value of the '{@link #getOrder() <em>Order</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getOrder()
@@ -163,7 +164,7 @@ public class StoreManagementSystemImpl extends MinimalEObjectImpl.Container impl
 	@Override
 	public EList<Order> getOrder() {
 		if (order == null) {
-			order = new EObjectContainmentEList<Order>(Order.class, this,
+			order = new EObjectResolvingEList<Order>(Order.class, this,
 					HomeworkPizzaShopPackage.STORE_MANAGEMENT_SYSTEM__ORDER);
 		}
 		return order;
@@ -181,8 +182,6 @@ public class StoreManagementSystemImpl extends MinimalEObjectImpl.Container impl
 			return basicSetStore(null, msgs);
 		case HomeworkPizzaShopPackage.STORE_MANAGEMENT_SYSTEM__USER:
 			return ((InternalEList<?>) getUser()).basicRemove(otherEnd, msgs);
-		case HomeworkPizzaShopPackage.STORE_MANAGEMENT_SYSTEM__ORDER:
-			return ((InternalEList<?>) getOrder()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}

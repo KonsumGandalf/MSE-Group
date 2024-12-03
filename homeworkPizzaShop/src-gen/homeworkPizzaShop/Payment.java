@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link homeworkPizzaShop.Payment#getCreditCardInfomration <em>Credit Card Infomration</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Payment#getTransactionNumber <em>Transaction Number</em>}</li>
  *   <li>{@link homeworkPizzaShop.Payment#isIsSucessful <em>Is Sucessful</em>}</li>
  * </ul>
  *
@@ -23,26 +23,26 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Payment extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Credit Card Infomration</b></em>' attribute.
+	 * Returns the value of the '<em><b>Transaction Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Credit Card Infomration</em>' attribute.
-	 * @see #setCreditCardInfomration(String)
-	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getPayment_CreditCardInfomration()
+	 * @return the value of the '<em>Transaction Number</em>' attribute.
+	 * @see #setTransactionNumber(int)
+	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getPayment_TransactionNumber()
 	 * @model
 	 * @generated
 	 */
-	String getCreditCardInfomration();
+	int getTransactionNumber();
 
 	/**
-	 * Sets the value of the '{@link homeworkPizzaShop.Payment#getCreditCardInfomration <em>Credit Card Infomration</em>}' attribute.
+	 * Sets the value of the '{@link homeworkPizzaShop.Payment#getTransactionNumber <em>Transaction Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Credit Card Infomration</em>' attribute.
-	 * @see #getCreditCardInfomration()
+	 * @param value the new value of the '<em>Transaction Number</em>' attribute.
+	 * @see #getTransactionNumber()
 	 * @generated
 	 */
-	void setCreditCardInfomration(String value);
+	void setTransactionNumber(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Sucessful</b></em>' attribute.

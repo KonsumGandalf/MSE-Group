@@ -60,13 +60,13 @@ public interface StoreManagementSystem extends EObject {
 	EList<User> getUser();
 
 	/**
-	 * Returns the value of the '<em><b>Order</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Order</b></em>' reference list.
 	 * The list contents are of type {@link homeworkPizzaShop.Order}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Order</em>' containment reference list.
+	 * @return the value of the '<em>Order</em>' reference list.
 	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getStoreManagementSystem_Order()
-	 * @model containment="true" required="true"
+	 * @model required="true"
 	 * @generated
 	 */
 	EList<Order> getOrder();

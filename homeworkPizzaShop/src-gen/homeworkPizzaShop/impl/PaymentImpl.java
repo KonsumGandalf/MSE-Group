@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link homeworkPizzaShop.impl.PaymentImpl#getCreditCardInfomration <em>Credit Card Infomration</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.PaymentImpl#getTransactionNumber <em>Transaction Number</em>}</li>
  *   <li>{@link homeworkPizzaShop.impl.PaymentImpl#isIsSucessful <em>Is Sucessful</em>}</li>
  * </ul>
  *
@@ -28,24 +28,24 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  */
 public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment {
 	/**
-	 * The default value of the '{@link #getCreditCardInfomration() <em>Credit Card Infomration</em>}' attribute.
+	 * The default value of the '{@link #getTransactionNumber() <em>Transaction Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCreditCardInfomration()
+	 * @see #getTransactionNumber()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String CREDIT_CARD_INFOMRATION_EDEFAULT = null;
+	protected static final int TRANSACTION_NUMBER_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getCreditCardInfomration() <em>Credit Card Infomration</em>}' attribute.
+	 * The cached value of the '{@link #getTransactionNumber() <em>Transaction Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCreditCardInfomration()
+	 * @see #getTransactionNumber()
 	 * @generated
 	 * @ordered
 	 */
-	protected String creditCardInfomration = CREDIT_CARD_INFOMRATION_EDEFAULT;
+	protected int transactionNumber = TRANSACTION_NUMBER_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #isIsSucessful() <em>Is Sucessful</em>}' attribute.
@@ -92,8 +92,8 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 	 * @generated
 	 */
 	@Override
-	public String getCreditCardInfomration() {
-		return creditCardInfomration;
+	public int getTransactionNumber() {
+		return transactionNumber;
 	}
 
 	/**
@@ -102,13 +102,12 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 	 * @generated
 	 */
 	@Override
-	public void setCreditCardInfomration(String newCreditCardInfomration) {
-		String oldCreditCardInfomration = creditCardInfomration;
-		creditCardInfomration = newCreditCardInfomration;
+	public void setTransactionNumber(int newTransactionNumber) {
+		int oldTransactionNumber = transactionNumber;
+		transactionNumber = newTransactionNumber;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HomeworkPizzaShopPackage.PAYMENT__CREDIT_CARD_INFOMRATION, oldCreditCardInfomration,
-					creditCardInfomration));
+			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.PAYMENT__TRANSACTION_NUMBER,
+					oldTransactionNumber, transactionNumber));
 	}
 
 	/**
@@ -143,8 +142,8 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.PAYMENT__CREDIT_CARD_INFOMRATION:
-			return getCreditCardInfomration();
+		case HomeworkPizzaShopPackage.PAYMENT__TRANSACTION_NUMBER:
+			return getTransactionNumber();
 		case HomeworkPizzaShopPackage.PAYMENT__IS_SUCESSFUL:
 			return isIsSucessful();
 		}
@@ -159,8 +158,8 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.PAYMENT__CREDIT_CARD_INFOMRATION:
-			setCreditCardInfomration((String) newValue);
+		case HomeworkPizzaShopPackage.PAYMENT__TRANSACTION_NUMBER:
+			setTransactionNumber((Integer) newValue);
 			return;
 		case HomeworkPizzaShopPackage.PAYMENT__IS_SUCESSFUL:
 			setIsSucessful((Boolean) newValue);
@@ -177,8 +176,8 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.PAYMENT__CREDIT_CARD_INFOMRATION:
-			setCreditCardInfomration(CREDIT_CARD_INFOMRATION_EDEFAULT);
+		case HomeworkPizzaShopPackage.PAYMENT__TRANSACTION_NUMBER:
+			setTransactionNumber(TRANSACTION_NUMBER_EDEFAULT);
 			return;
 		case HomeworkPizzaShopPackage.PAYMENT__IS_SUCESSFUL:
 			setIsSucessful(IS_SUCESSFUL_EDEFAULT);
@@ -195,9 +194,8 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.PAYMENT__CREDIT_CARD_INFOMRATION:
-			return CREDIT_CARD_INFOMRATION_EDEFAULT == null ? creditCardInfomration != null
-					: !CREDIT_CARD_INFOMRATION_EDEFAULT.equals(creditCardInfomration);
+		case HomeworkPizzaShopPackage.PAYMENT__TRANSACTION_NUMBER:
+			return transactionNumber != TRANSACTION_NUMBER_EDEFAULT;
 		case HomeworkPizzaShopPackage.PAYMENT__IS_SUCESSFUL:
 			return isSucessful != IS_SUCESSFUL_EDEFAULT;
 		}
@@ -215,8 +213,8 @@ public class PaymentImpl extends MinimalEObjectImpl.Container implements Payment
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (creditCardInfomration: ");
-		result.append(creditCardInfomration);
+		result.append(" (transactionNumber: ");
+		result.append(transactionNumber);
 		result.append(", isSucessful: ");
 		result.append(isSucessful);
 		result.append(')');

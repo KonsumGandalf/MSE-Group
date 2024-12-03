@@ -13,7 +13,7 @@
     <eLiterals name="Milkshake" value="8"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Status">
-    <eLiterals name="LITERAL0"/>
+    <eLiterals name="Open"/>
     <eLiterals name="In Prepartion" value="1"/>
     <eLiterals name="Cancelled" value="2"/>
     <eLiterals name="In Delivery" value="3"/>

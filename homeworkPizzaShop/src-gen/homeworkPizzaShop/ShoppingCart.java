@@ -16,8 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link homeworkPizzaShop.ShoppingCart#getTotalPrice <em>Total Price</em>}</li>
- *   <li>{@link homeworkPizzaShop.ShoppingCart#getDiscrount <em>Discrount</em>}</li>
- *   <li>{@link homeworkPizzaShop.ShoppingCart#getCustomer <em>Customer</em>}</li>
+ *   <li>{@link homeworkPizzaShop.ShoppingCart#getDiscount <em>Discount</em>}</li>
  *   <li>{@link homeworkPizzaShop.ShoppingCart#getCartitem <em>Cartitem</em>}</li>
  * </ul>
  *
@@ -49,48 +48,26 @@ public interface ShoppingCart extends EObject {
 	void setTotalPrice(float value);
 
 	/**
-	 * Returns the value of the '<em><b>Discrount</b></em>' attribute.
+	 * Returns the value of the '<em><b>Discount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Discrount</em>' attribute.
-	 * @see #setDiscrount(float)
-	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getShoppingCart_Discrount()
+	 * @return the value of the '<em>Discount</em>' attribute.
+	 * @see #setDiscount(float)
+	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getShoppingCart_Discount()
 	 * @model
 	 * @generated
 	 */
-	float getDiscrount();
+	float getDiscount();
 
 	/**
-	 * Sets the value of the '{@link homeworkPizzaShop.ShoppingCart#getDiscrount <em>Discrount</em>}' attribute.
+	 * Sets the value of the '{@link homeworkPizzaShop.ShoppingCart#getDiscount <em>Discount</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Discrount</em>' attribute.
-	 * @see #getDiscrount()
+	 * @param value the new value of the '<em>Discount</em>' attribute.
+	 * @see #getDiscount()
 	 * @generated
 	 */
-	void setDiscrount(float value);
-
-	/**
-	 * Returns the value of the '<em><b>Customer</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Customer</em>' containment reference.
-	 * @see #setCustomer(Customer)
-	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getShoppingCart_Customer()
-	 * @model containment="true" required="true"
-	 * @generated
-	 */
-	Customer getCustomer();
-
-	/**
-	 * Sets the value of the '{@link homeworkPizzaShop.ShoppingCart#getCustomer <em>Customer</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Customer</em>' containment reference.
-	 * @see #getCustomer()
-	 * @generated
-	 */
-	void setCustomer(Customer value);
+	void setDiscount(float value);
 
 	/**
 	 * Returns the value of the '<em><b>Cartitem</b></em>' containment reference list.

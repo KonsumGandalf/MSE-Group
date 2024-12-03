@@ -15,13 +15,13 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link homeworkPizzaShop.Order#isIsActive <em>Is Active</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Order#getOrderID <em>Order ID</em>}</li>
  *   <li>{@link homeworkPizzaShop.Order#getStatus <em>Status</em>}</li>
  *   <li>{@link homeworkPizzaShop.Order#getAddress <em>Address</em>}</li>
- *   <li>{@link homeworkPizzaShop.Order#getOrderID <em>Order ID</em>}</li>
  *   <li>{@link homeworkPizzaShop.Order#getPayment <em>Payment</em>}</li>
- *   <li>{@link homeworkPizzaShop.Order#getCustomer <em>Customer</em>}</li>
  *   <li>{@link homeworkPizzaShop.Order#getEmployee <em>Employee</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Order#isIsActive <em>Is Active</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Order#getCustomer <em>Customer</em>}</li>
  * </ul>
  *
  * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getOrder()
@@ -105,7 +105,7 @@ public interface Order extends EObject {
 	 * @return the value of the '<em>Order ID</em>' attribute.
 	 * @see #setOrderID(int)
 	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getOrder_OrderID()
-	 * @model
+	 * @model id="true"
 	 * @generated
 	 */
 	int getOrderID();
@@ -143,25 +143,35 @@ public interface Order extends EObject {
 	void setPayment(Payment value);
 
 	/**
-	 * Returns the value of the '<em><b>Customer</b></em>' containment reference list.
-	 * The list contents are of type {@link homeworkPizzaShop.Customer}.
+	 * Returns the value of the '<em><b>Customer</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Customer</em>' containment reference list.
+	 * @return the value of the '<em>Customer</em>' containment reference.
+	 * @see #setCustomer(ShoppingCart)
 	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getOrder_Customer()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<Customer> getCustomer();
+	ShoppingCart getCustomer();
 
 	/**
-	 * Returns the value of the '<em><b>Employee</b></em>' containment reference list.
+	 * Sets the value of the '{@link homeworkPizzaShop.Order#getCustomer <em>Customer</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Customer</em>' containment reference.
+	 * @see #getCustomer()
+	 * @generated
+	 */
+	void setCustomer(ShoppingCart value);
+
+	/**
+	 * Returns the value of the '<em><b>Employee</b></em>' reference list.
 	 * The list contents are of type {@link homeworkPizzaShop.Employee}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Employee</em>' containment reference list.
+	 * @return the value of the '<em>Employee</em>' reference list.
 	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getOrder_Employee()
-	 * @model containment="true" required="true"
+	 * @model required="true"
 	 * @generated
 	 */
 	EList<Employee> getEmployee();

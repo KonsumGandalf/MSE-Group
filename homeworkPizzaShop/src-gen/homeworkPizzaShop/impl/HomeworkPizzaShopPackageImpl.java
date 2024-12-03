@@ -23,6 +23,7 @@ import homeworkPizzaShop.User;
 import homeworkPizzaShop.Webapplication;
 import homeworkPizzaShop.Webpage;
 
+import homeworkPizzaShop.Website;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
@@ -149,6 +150,13 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	private EClass storeManagementSystemEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass websiteEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -374,7 +382,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EAttribute getShoppingCart_Discrount() {
+	public EAttribute getShoppingCart_Discount() {
 		return (EAttribute) shoppingCartEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -384,18 +392,8 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EReference getShoppingCart_Customer() {
-		return (EReference) shoppingCartEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getShoppingCart_Cartitem() {
-		return (EReference) shoppingCartEClass.getEStructuralFeatures().get(3);
+		return (EReference) shoppingCartEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -504,7 +502,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EAttribute getWebpage_URL() {
+	public EAttribute getWebpage_Title() {
 		return (EAttribute) webpageEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -514,7 +512,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EAttribute getWebpage_Title() {
+	public EAttribute getWebpage_Url() {
 		return (EAttribute) webpageEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -536,6 +534,16 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	@Override
 	public EAttribute getCustomer_CustomerID() {
 		return (EAttribute) customerEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCustomer_Customer() {
+		return (EReference) customerEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -595,7 +603,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 */
 	@Override
 	public EAttribute getOrder_IsActive() {
-		return (EAttribute) orderEClass.getEStructuralFeatures().get(0);
+		return (EAttribute) orderEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -625,7 +633,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 */
 	@Override
 	public EAttribute getOrder_OrderID() {
-		return (EAttribute) orderEClass.getEStructuralFeatures().get(3);
+		return (EAttribute) orderEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -635,7 +643,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 */
 	@Override
 	public EReference getOrder_Payment() {
-		return (EReference) orderEClass.getEStructuralFeatures().get(4);
+		return (EReference) orderEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -645,7 +653,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 */
 	@Override
 	public EReference getOrder_Customer() {
-		return (EReference) orderEClass.getEStructuralFeatures().get(5);
+		return (EReference) orderEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -655,7 +663,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 */
 	@Override
 	public EReference getOrder_Employee() {
-		return (EReference) orderEClass.getEStructuralFeatures().get(6);
+		return (EReference) orderEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -734,8 +742,8 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EAttribute getWebapplication_Domain() {
-		return (EAttribute) webapplicationEClass.getEStructuralFeatures().get(1);
+	public EReference getWebapplication_Website() {
+		return (EReference) webapplicationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -744,8 +752,8 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EReference getWebapplication_Webpage() {
-		return (EReference) webapplicationEClass.getEStructuralFeatures().get(2);
+	public EAttribute getWebapplication_Name() {
+		return (EAttribute) webapplicationEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -764,7 +772,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPayment_CreditCardInfomration() {
+	public EAttribute getPayment_TransactionNumber() {
 		return (EAttribute) paymentEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -816,6 +824,36 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 	@Override
 	public EReference getStoreManagementSystem_Order() {
 		return (EReference) storeManagementSystemEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getWebsite() {
+		return websiteEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWebsite_Webpage() {
+		return (EReference) websiteEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getWebsite_Domain() {
+		return (EAttribute) websiteEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -886,8 +924,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 
 		shoppingCartEClass = createEClass(SHOPPING_CART);
 		createEAttribute(shoppingCartEClass, SHOPPING_CART__TOTAL_PRICE);
-		createEAttribute(shoppingCartEClass, SHOPPING_CART__DISCROUNT);
-		createEReference(shoppingCartEClass, SHOPPING_CART__CUSTOMER);
+		createEAttribute(shoppingCartEClass, SHOPPING_CART__DISCOUNT);
 		createEReference(shoppingCartEClass, SHOPPING_CART__CARTITEM);
 
 		productEClass = createEClass(PRODUCT);
@@ -902,11 +939,12 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 		createEAttribute(employeeEClass, EMPLOYEE__POSITION);
 
 		webpageEClass = createEClass(WEBPAGE);
-		createEAttribute(webpageEClass, WEBPAGE__URL);
 		createEAttribute(webpageEClass, WEBPAGE__TITLE);
+		createEAttribute(webpageEClass, WEBPAGE__URL);
 
 		customerEClass = createEClass(CUSTOMER);
 		createEAttribute(customerEClass, CUSTOMER__CUSTOMER_ID);
+		createEReference(customerEClass, CUSTOMER__CUSTOMER);
 
 		informationPageEClass = createEClass(INFORMATION_PAGE);
 		createEAttribute(informationPageEClass, INFORMATION_PAGE__TEXT);
@@ -915,13 +953,13 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 		createEAttribute(landingPageEClass, LANDING_PAGE__WELCOME_MESSAGE);
 
 		orderEClass = createEClass(ORDER);
-		createEAttribute(orderEClass, ORDER__IS_ACTIVE);
+		createEAttribute(orderEClass, ORDER__ORDER_ID);
 		createEAttribute(orderEClass, ORDER__STATUS);
 		createEAttribute(orderEClass, ORDER__ADDRESS);
-		createEAttribute(orderEClass, ORDER__ORDER_ID);
 		createEReference(orderEClass, ORDER__PAYMENT);
-		createEReference(orderEClass, ORDER__CUSTOMER);
 		createEReference(orderEClass, ORDER__EMPLOYEE);
+		createEAttribute(orderEClass, ORDER__IS_ACTIVE);
+		createEReference(orderEClass, ORDER__CUSTOMER);
 
 		storeEClass = createEClass(STORE);
 		createEAttribute(storeEClass, STORE__STORE_ID);
@@ -931,17 +969,21 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 
 		webapplicationEClass = createEClass(WEBAPPLICATION);
 		createEReference(webapplicationEClass, WEBAPPLICATION__STOREMANAGEMENTSYSTEM);
-		createEAttribute(webapplicationEClass, WEBAPPLICATION__DOMAIN);
-		createEReference(webapplicationEClass, WEBAPPLICATION__WEBPAGE);
+		createEReference(webapplicationEClass, WEBAPPLICATION__WEBSITE);
+		createEAttribute(webapplicationEClass, WEBAPPLICATION__NAME);
 
 		paymentEClass = createEClass(PAYMENT);
-		createEAttribute(paymentEClass, PAYMENT__CREDIT_CARD_INFOMRATION);
+		createEAttribute(paymentEClass, PAYMENT__TRANSACTION_NUMBER);
 		createEAttribute(paymentEClass, PAYMENT__IS_SUCESSFUL);
 
 		storeManagementSystemEClass = createEClass(STORE_MANAGEMENT_SYSTEM);
 		createEReference(storeManagementSystemEClass, STORE_MANAGEMENT_SYSTEM__STORE);
 		createEReference(storeManagementSystemEClass, STORE_MANAGEMENT_SYSTEM__USER);
 		createEReference(storeManagementSystemEClass, STORE_MANAGEMENT_SYSTEM__ORDER);
+
+		websiteEClass = createEClass(WEBSITE);
+		createEReference(websiteEClass, WEBSITE__WEBPAGE);
+		createEAttribute(websiteEClass, WEBSITE__DOMAIN);
 
 		// Create enums
 		statusEEnum = createEEnum(STATUS);
@@ -1020,12 +1062,8 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 		initEAttribute(getShoppingCart_TotalPrice(), ecorePackage.getEFloat(), "totalPrice", null, 0, 1,
 				ShoppingCart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
-		initEAttribute(getShoppingCart_Discrount(), ecorePackage.getEFloat(), "discrount", null, 0, 1,
-				ShoppingCart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getShoppingCart_Customer(), this.getCustomer(), null, "customer", null, 1, 1, ShoppingCart.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getShoppingCart_Discount(), ecorePackage.getEFloat(), "discount", null, 0, 1, ShoppingCart.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getShoppingCart_Cartitem(), this.getCartItem(), null, "cartitem", null, 0, -1,
 				ShoppingCart.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1040,7 +1078,7 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 		initEAttribute(getProduct_InStock(), ecorePackage.getEBoolean(), "inStock", null, 0, 1, Product.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProduct_Cartitem(), this.getCartItem(), null, "cartitem", null, 1, -1, Product.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(employeeEClass, Employee.class, "Employee", !IS_ABSTRACT, !IS_INTERFACE,
@@ -1051,15 +1089,18 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(webpageEClass, Webpage.class, "Webpage", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getWebpage_URL(), ecorePackage.getEString(), "URL", null, 0, 1, Webpage.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebpage_Title(), ecorePackage.getEString(), "title", null, 0, 1, Webpage.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWebpage_Url(), ecorePackage.getEString(), "url", null, 0, 1, Webpage.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(customerEClass, Customer.class, "Customer", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustomer_CustomerID(), ecorePackage.getEInt(), "customerID", null, 0, 1, Customer.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCustomer_Customer(), this.getOrder(), null, "customer", null, 1, -1, Customer.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(informationPageEClass, InformationPage.class, "InformationPage", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1073,21 +1114,21 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 				!IS_DERIVED, IS_ORDERED);
 
 		initEClass(orderEClass, Order.class, "Order", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getOrder_IsActive(), ecorePackage.getEBoolean(), "isActive", null, 0, 1, Order.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrder_OrderID(), ecorePackage.getEInt(), "orderID", null, 0, 1, Order.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrder_Status(), this.getStatus(), "status", null, 0, 1, Order.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getOrder_Address(), ecorePackage.getEString(), "address", null, 0, 1, Order.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getOrder_OrderID(), ecorePackage.getEInt(), "orderID", null, 0, 1, Order.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrder_Payment(), this.getPayment(), null, "payment", null, 1, 1, Order.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
 				IS_ORDERED);
-		initEReference(getOrder_Customer(), this.getCustomer(), null, "customer", null, 1, -1, Order.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOrder_Employee(), this.getEmployee(), null, "employee", null, 1, -1, Order.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrder_IsActive(), ecorePackage.getEBoolean(), "isActive", null, 0, 1, Order.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrder_Customer(), this.getShoppingCart(), null, "customer", null, 1, 1, Order.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1107,16 +1148,15 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 		initEReference(getWebapplication_Storemanagementsystem(), this.getStoreManagementSystem(), null,
 				"storemanagementsystem", null, 1, 1, Webapplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getWebapplication_Domain(), ecorePackage.getEString(), "domain", null, 0, 1,
-				Webapplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
-		initEReference(getWebapplication_Webpage(), this.getWebpage(), null, "webpage", null, 1, -1,
+		initEReference(getWebapplication_Website(), this.getWebsite(), null, "website", null, 1, 1,
 				Webapplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWebapplication_Name(), ecorePackage.getEString(), "name", null, 0, 1, Webapplication.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(paymentEClass, Payment.class, "Payment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getPayment_CreditCardInfomration(), ecorePackage.getEString(), "creditCardInfomration", null, 0,
-				1, Payment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
+		initEAttribute(getPayment_TransactionNumber(), ecorePackage.getEInt(), "transactionNumber", null, 0, 1,
+				Payment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPayment_IsSucessful(), ecorePackage.getEBoolean(), "isSucessful", null, 0, 1, Payment.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1130,8 +1170,15 @@ public class HomeworkPizzaShopPackageImpl extends EPackageImpl implements Homewo
 				StoreManagementSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getStoreManagementSystem_Order(), this.getOrder(), null, "order", null, 1, -1,
-				StoreManagementSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				StoreManagementSystem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(websiteEClass, Website.class, "Website", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getWebsite_Webpage(), this.getWebpage(), null, "webpage", null, 1, -1, Website.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
+				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWebsite_Domain(), ecorePackage.getEString(), "domain", null, 0, 1, Website.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(statusEEnum, Status.class, "Status");

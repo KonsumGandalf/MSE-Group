@@ -2,11 +2,11 @@
  */
 package homeworkPizzaShop.impl;
 
-import homeworkPizzaShop.Customer;
 import homeworkPizzaShop.Employee;
 import homeworkPizzaShop.HomeworkPizzaShopPackage;
 import homeworkPizzaShop.Order;
 import homeworkPizzaShop.Payment;
+import homeworkPizzaShop.ShoppingCart;
 import homeworkPizzaShop.Status;
 
 import java.util.Collection;
@@ -21,9 +21,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,37 +31,37 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link homeworkPizzaShop.impl.OrderImpl#isIsActive <em>Is Active</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getOrderID <em>Order ID</em>}</li>
  *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getStatus <em>Status</em>}</li>
  *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getAddress <em>Address</em>}</li>
- *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getOrderID <em>Order ID</em>}</li>
  *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getPayment <em>Payment</em>}</li>
- *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getCustomer <em>Customer</em>}</li>
  *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getEmployee <em>Employee</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.OrderImpl#isIsActive <em>Is Active</em>}</li>
+ *   <li>{@link homeworkPizzaShop.impl.OrderImpl#getCustomer <em>Customer</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	/**
-	 * The default value of the '{@link #isIsActive() <em>Is Active</em>}' attribute.
+	 * The default value of the '{@link #getOrderID() <em>Order ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isIsActive()
+	 * @see #getOrderID()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final boolean IS_ACTIVE_EDEFAULT = false;
+	protected static final int ORDER_ID_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #isIsActive() <em>Is Active</em>}' attribute.
+	 * The cached value of the '{@link #getOrderID() <em>Order ID</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #isIsActive()
+	 * @see #getOrderID()
 	 * @generated
 	 * @ordered
 	 */
-	protected boolean isActive = IS_ACTIVE_EDEFAULT;
+	protected int orderID = ORDER_ID_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getStatus() <em>Status</em>}' attribute.
@@ -106,26 +104,6 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	protected String address = ADDRESS_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getOrderID() <em>Order ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getOrderID()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final int ORDER_ID_EDEFAULT = 0;
-
-	/**
-	 * The cached value of the '{@link #getOrderID() <em>Order ID</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getOrderID()
-	 * @generated
-	 * @ordered
-	 */
-	protected int orderID = ORDER_ID_EDEFAULT;
-
-	/**
 	 * The cached value of the '{@link #getPayment() <em>Payment</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -136,17 +114,7 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	protected Payment payment;
 
 	/**
-	 * The cached value of the '{@link #getCustomer() <em>Customer</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCustomer()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Customer> customer;
-
-	/**
-	 * The cached value of the '{@link #getEmployee() <em>Employee</em>}' containment reference list.
+	 * The cached value of the '{@link #getEmployee() <em>Employee</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getEmployee()
@@ -154,6 +122,36 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	 * @ordered
 	 */
 	protected EList<Employee> employee;
+
+	/**
+	 * The default value of the '{@link #isIsActive() <em>Is Active</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isIsActive()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean IS_ACTIVE_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isIsActive() <em>Is Active</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isIsActive()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean isActive = IS_ACTIVE_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getCustomer() <em>Customer</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCustomer()
+	 * @generated
+	 * @ordered
+	 */
+	protected ShoppingCart customer;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,12 +326,50 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	 * @generated
 	 */
 	@Override
-	public EList<Customer> getCustomer() {
-		if (customer == null) {
-			customer = new EObjectContainmentEList<Customer>(Customer.class, this,
-					HomeworkPizzaShopPackage.ORDER__CUSTOMER);
-		}
+	public ShoppingCart getCustomer() {
 		return customer;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetCustomer(ShoppingCart newCustomer, NotificationChain msgs) {
+		ShoppingCart oldCustomer = customer;
+		customer = newCustomer;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
+					HomeworkPizzaShopPackage.ORDER__CUSTOMER, oldCustomer, newCustomer);
+			if (msgs == null)
+				msgs = notification;
+			else
+				msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCustomer(ShoppingCart newCustomer) {
+		if (newCustomer != customer) {
+			NotificationChain msgs = null;
+			if (customer != null)
+				msgs = ((InternalEObject) customer).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HomeworkPizzaShopPackage.ORDER__CUSTOMER, null, msgs);
+			if (newCustomer != null)
+				msgs = ((InternalEObject) newCustomer).eInverseAdd(this,
+						EOPPOSITE_FEATURE_BASE - HomeworkPizzaShopPackage.ORDER__CUSTOMER, null, msgs);
+			msgs = basicSetCustomer(newCustomer, msgs);
+			if (msgs != null)
+				msgs.dispatch();
+		} else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, HomeworkPizzaShopPackage.ORDER__CUSTOMER, newCustomer,
+					newCustomer));
 	}
 
 	/**
@@ -344,7 +380,7 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	@Override
 	public EList<Employee> getEmployee() {
 		if (employee == null) {
-			employee = new EObjectContainmentEList<Employee>(Employee.class, this,
+			employee = new EObjectResolvingEList<Employee>(Employee.class, this,
 					HomeworkPizzaShopPackage.ORDER__EMPLOYEE);
 		}
 		return employee;
@@ -361,9 +397,7 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 		case HomeworkPizzaShopPackage.ORDER__PAYMENT:
 			return basicSetPayment(null, msgs);
 		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
-			return ((InternalEList<?>) getCustomer()).basicRemove(otherEnd, msgs);
-		case HomeworkPizzaShopPackage.ORDER__EMPLOYEE:
-			return ((InternalEList<?>) getEmployee()).basicRemove(otherEnd, msgs);
+			return basicSetCustomer(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -376,20 +410,20 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
-			return isIsActive();
+		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
+			return getOrderID();
 		case HomeworkPizzaShopPackage.ORDER__STATUS:
 			return getStatus();
 		case HomeworkPizzaShopPackage.ORDER__ADDRESS:
 			return getAddress();
-		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
-			return getOrderID();
 		case HomeworkPizzaShopPackage.ORDER__PAYMENT:
 			return getPayment();
-		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
-			return getCustomer();
 		case HomeworkPizzaShopPackage.ORDER__EMPLOYEE:
 			return getEmployee();
+		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
+			return isIsActive();
+		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
+			return getCustomer();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -403,8 +437,8 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
-			setIsActive((Boolean) newValue);
+		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
+			setOrderID((Integer) newValue);
 			return;
 		case HomeworkPizzaShopPackage.ORDER__STATUS:
 			setStatus((Status) newValue);
@@ -412,19 +446,18 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 		case HomeworkPizzaShopPackage.ORDER__ADDRESS:
 			setAddress((String) newValue);
 			return;
-		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
-			setOrderID((Integer) newValue);
-			return;
 		case HomeworkPizzaShopPackage.ORDER__PAYMENT:
 			setPayment((Payment) newValue);
-			return;
-		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
-			getCustomer().clear();
-			getCustomer().addAll((Collection<? extends Customer>) newValue);
 			return;
 		case HomeworkPizzaShopPackage.ORDER__EMPLOYEE:
 			getEmployee().clear();
 			getEmployee().addAll((Collection<? extends Employee>) newValue);
+			return;
+		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
+			setIsActive((Boolean) newValue);
+			return;
+		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
+			setCustomer((ShoppingCart) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -438,8 +471,8 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
-			setIsActive(IS_ACTIVE_EDEFAULT);
+		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
+			setOrderID(ORDER_ID_EDEFAULT);
 			return;
 		case HomeworkPizzaShopPackage.ORDER__STATUS:
 			setStatus(STATUS_EDEFAULT);
@@ -447,17 +480,17 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 		case HomeworkPizzaShopPackage.ORDER__ADDRESS:
 			setAddress(ADDRESS_EDEFAULT);
 			return;
-		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
-			setOrderID(ORDER_ID_EDEFAULT);
-			return;
 		case HomeworkPizzaShopPackage.ORDER__PAYMENT:
 			setPayment((Payment) null);
 			return;
-		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
-			getCustomer().clear();
-			return;
 		case HomeworkPizzaShopPackage.ORDER__EMPLOYEE:
 			getEmployee().clear();
+			return;
+		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
+			setIsActive(IS_ACTIVE_EDEFAULT);
+			return;
+		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
+			setCustomer((ShoppingCart) null);
 			return;
 		}
 		super.eUnset(featureID);
@@ -471,20 +504,20 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
-			return isActive != IS_ACTIVE_EDEFAULT;
+		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
+			return orderID != ORDER_ID_EDEFAULT;
 		case HomeworkPizzaShopPackage.ORDER__STATUS:
 			return status != STATUS_EDEFAULT;
 		case HomeworkPizzaShopPackage.ORDER__ADDRESS:
 			return ADDRESS_EDEFAULT == null ? address != null : !ADDRESS_EDEFAULT.equals(address);
-		case HomeworkPizzaShopPackage.ORDER__ORDER_ID:
-			return orderID != ORDER_ID_EDEFAULT;
 		case HomeworkPizzaShopPackage.ORDER__PAYMENT:
 			return payment != null;
-		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
-			return customer != null && !customer.isEmpty();
 		case HomeworkPizzaShopPackage.ORDER__EMPLOYEE:
 			return employee != null && !employee.isEmpty();
+		case HomeworkPizzaShopPackage.ORDER__IS_ACTIVE:
+			return isActive != IS_ACTIVE_EDEFAULT;
+		case HomeworkPizzaShopPackage.ORDER__CUSTOMER:
+			return customer != null;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -500,14 +533,14 @@ public class OrderImpl extends MinimalEObjectImpl.Container implements Order {
 			return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (isActive: ");
-		result.append(isActive);
+		result.append(" (orderID: ");
+		result.append(orderID);
 		result.append(", status: ");
 		result.append(status);
 		result.append(", address: ");
 		result.append(address);
-		result.append(", orderID: ");
-		result.append(orderID);
+		result.append(", isActive: ");
+		result.append(isActive);
 		result.append(')');
 		return result.toString();
 	}

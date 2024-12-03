@@ -2,8 +2,6 @@
  */
 package homeworkPizzaShop;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -16,8 +14,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link homeworkPizzaShop.Webapplication#getStoremanagementsystem <em>Storemanagementsystem</em>}</li>
- *   <li>{@link homeworkPizzaShop.Webapplication#getDomain <em>Domain</em>}</li>
- *   <li>{@link homeworkPizzaShop.Webapplication#getWebpage <em>Webpage</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Webapplication#getWebsite <em>Website</em>}</li>
+ *   <li>{@link homeworkPizzaShop.Webapplication#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getWebapplication()
@@ -48,37 +46,47 @@ public interface Webapplication extends EObject {
 	void setStoremanagementsystem(StoreManagementSystem value);
 
 	/**
-	 * Returns the value of the '<em><b>Domain</b></em>' attribute.
+	 * Returns the value of the '<em><b>Website</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Domain</em>' attribute.
-	 * @see #setDomain(String)
-	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getWebapplication_Domain()
-	 * @model
-	 * @generated
-	 */
-	String getDomain();
-
-	/**
-	 * Sets the value of the '{@link homeworkPizzaShop.Webapplication#getDomain <em>Domain</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Domain</em>' attribute.
-	 * @see #getDomain()
-	 * @generated
-	 */
-	void setDomain(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Webpage</b></em>' containment reference list.
-	 * The list contents are of type {@link homeworkPizzaShop.Webpage}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Webpage</em>' containment reference list.
-	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getWebapplication_Webpage()
+	 * @return the value of the '<em>Website</em>' containment reference.
+	 * @see #setWebsite(Website)
+	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getWebapplication_Website()
 	 * @model containment="true" required="true"
 	 * @generated
 	 */
-	EList<Webpage> getWebpage();
+	Website getWebsite();
+
+	/**
+	 * Sets the value of the '{@link homeworkPizzaShop.Webapplication#getWebsite <em>Website</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Website</em>' containment reference.
+	 * @see #getWebsite()
+	 * @generated
+	 */
+	void setWebsite(Website value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getWebapplication_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link homeworkPizzaShop.Webapplication#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // Webapplication

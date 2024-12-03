@@ -29,9 +29,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ShoppingCart">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="discrount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1"
-        eType="#//Customer" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="discount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cartitem" upperBound="-1"
         eType="#//CartItem" containment="true"/>
   </eClassifiers>
@@ -41,18 +39,21 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="inStock" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cartitem" lowerBound="1"
-        upperBound="-1" eType="#//CartItem" containment="true"/>
+        upperBound="-1" eType="#//CartItem"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Employee" eSuperTypes="#//User">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="employeeID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Webpage" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="URL" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Customer" eSuperTypes="#//User">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="customerID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1"
+        upperBound="-1" eType="#//Order" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InformationPage" eSuperTypes="#//Webpage">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -72,16 +73,17 @@
     <eLiterals name="Milkshake" value="8"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Order">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isActive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        iD="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="#//Status"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="payment" lowerBound="1"
         eType="#//Payment" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1"
-        upperBound="-1" eType="#//Customer" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employee" lowerBound="1"
-        upperBound="-1" eType="#//Employee" containment="true"/>
+        upperBound="-1" eType="#//Employee"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isActive" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="customer" lowerBound="1"
+        eType="#//ShoppingCart" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Store">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="storeID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -93,13 +95,12 @@
   <eClassifiers xsi:type="ecore:EClass" name="Webapplication">
     <eStructuralFeatures xsi:type="ecore:EReference" name="storemanagementsystem"
         lowerBound="1" eType="#//StoreManagementSystem" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="webpage" lowerBound="1"
-        upperBound="-1" eType="#//Webpage" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="website" lowerBound="1"
+        eType="#//Website" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Payment">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="creditCardInfomration"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="transactionNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSucessful" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="StoreManagementSystem">
@@ -108,6 +109,11 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="user" lowerBound="1" upperBound="-1"
         eType="#//User" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="order" lowerBound="1" upperBound="-1"
-        eType="#//Order" containment="true"/>
+        eType="#//Order"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Website">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="webpage" lowerBound="1"
+        upperBound="-1" eType="#//Webpage" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="domain" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

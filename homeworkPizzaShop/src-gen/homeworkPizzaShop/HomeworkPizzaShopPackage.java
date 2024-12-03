@@ -68,22 +68,22 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int WEBPAGE = 7;
 
 	/**
-	 * The feature id for the '<em><b>URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int WEBPAGE__URL = 0;
-
-	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEBPAGE__TITLE = 1;
+	int WEBPAGE__TITLE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEBPAGE__URL = 1;
 
 	/**
 	 * The number of structural features of the '<em>Webpage</em>' class.
@@ -114,15 +114,6 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int BROWSING_PAGE = 0;
 
 	/**
-	 * The feature id for the '<em><b>URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BROWSING_PAGE__URL = WEBPAGE__URL;
-
-	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -130,6 +121,15 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @ordered
 	 */
 	int BROWSING_PAGE__TITLE = WEBPAGE__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BROWSING_PAGE__URL = WEBPAGE__URL;
 
 	/**
 	 * The feature id for the '<em><b>Filter</b></em>' attribute.
@@ -224,15 +224,6 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int PRODUCT_PAGE = 2;
 
 	/**
-	 * The feature id for the '<em><b>URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRODUCT_PAGE__URL = WEBPAGE__URL;
-
-	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -240,6 +231,15 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRODUCT_PAGE__TITLE = WEBPAGE__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_PAGE__URL = WEBPAGE__URL;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -343,22 +343,13 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int SHOPPING_CART__TOTAL_PRICE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Discrount</b></em>' attribute.
+	 * The feature id for the '<em><b>Discount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART__DISCROUNT = 1;
-
-	/**
-	 * The feature id for the '<em><b>Customer</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SHOPPING_CART__CUSTOMER = 2;
+	int SHOPPING_CART__DISCOUNT = 1;
 
 	/**
 	 * The feature id for the '<em><b>Cartitem</b></em>' containment reference list.
@@ -367,7 +358,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART__CARTITEM = 3;
+	int SHOPPING_CART__CARTITEM = 2;
 
 	/**
 	 * The number of structural features of the '<em>Shopping Cart</em>' class.
@@ -376,7 +367,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHOPPING_CART_FEATURE_COUNT = 4;
+	int SHOPPING_CART_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Shopping Cart</em>' class.
@@ -434,7 +425,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int PRODUCT__IN_STOCK = 3;
 
 	/**
-	 * The feature id for the '<em><b>Cartitem</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Cartitem</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -562,13 +553,22 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int CUSTOMER__CUSTOMER_ID = USER_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Customer</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUSTOMER__CUSTOMER = USER_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Customer</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOMER_FEATURE_COUNT = USER_FEATURE_COUNT + 1;
+	int CUSTOMER_FEATURE_COUNT = USER_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Customer</em>' class.
@@ -590,15 +590,6 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int INFORMATION_PAGE = 9;
 
 	/**
-	 * The feature id for the '<em><b>URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INFORMATION_PAGE__URL = WEBPAGE__URL;
-
-	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -606,6 +597,15 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @ordered
 	 */
 	int INFORMATION_PAGE__TITLE = WEBPAGE__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INFORMATION_PAGE__URL = WEBPAGE__URL;
 
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' attribute.
@@ -645,15 +645,6 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int LANDING_PAGE = 10;
 
 	/**
-	 * The feature id for the '<em><b>URL</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LANDING_PAGE__URL = WEBPAGE__URL;
-
-	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -661,6 +652,15 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @ordered
 	 */
 	int LANDING_PAGE__TITLE = WEBPAGE__TITLE;
+
+	/**
+	 * The feature id for the '<em><b>Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LANDING_PAGE__URL = WEBPAGE__URL;
 
 	/**
 	 * The feature id for the '<em><b>Welcome Message</b></em>' attribute.
@@ -700,13 +700,13 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int ORDER = 11;
 
 	/**
-	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
+	 * The feature id for the '<em><b>Order ID</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER__IS_ACTIVE = 0;
+	int ORDER__ORDER_ID = 0;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -727,40 +727,40 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int ORDER__ADDRESS = 2;
 
 	/**
-	 * The feature id for the '<em><b>Order ID</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDER__ORDER_ID = 3;
-
-	/**
 	 * The feature id for the '<em><b>Payment</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER__PAYMENT = 4;
+	int ORDER__PAYMENT = 3;
 
 	/**
-	 * The feature id for the '<em><b>Customer</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Employee</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER__CUSTOMER = 5;
+	int ORDER__EMPLOYEE = 4;
 
 	/**
-	 * The feature id for the '<em><b>Employee</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ORDER__EMPLOYEE = 6;
+	int ORDER__IS_ACTIVE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Customer</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDER__CUSTOMER = 6;
 
 	/**
 	 * The number of structural features of the '<em>Order</em>' class.
@@ -864,22 +864,22 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int WEBAPPLICATION__STOREMANAGEMENTSYSTEM = 0;
 
 	/**
-	 * The feature id for the '<em><b>Domain</b></em>' attribute.
+	 * The feature id for the '<em><b>Website</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEBAPPLICATION__DOMAIN = 1;
+	int WEBAPPLICATION__WEBSITE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Webpage</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEBAPPLICATION__WEBPAGE = 2;
+	int WEBAPPLICATION__NAME = 2;
 
 	/**
 	 * The number of structural features of the '<em>Webapplication</em>' class.
@@ -910,13 +910,13 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int PAYMENT = 14;
 
 	/**
-	 * The feature id for the '<em><b>Credit Card Infomration</b></em>' attribute.
+	 * The feature id for the '<em><b>Transaction Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT__CREDIT_CARD_INFOMRATION = 0;
+	int PAYMENT__TRANSACTION_NUMBER = 0;
 
 	/**
 	 * The feature id for the '<em><b>Is Sucessful</b></em>' attribute.
@@ -974,7 +974,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int STORE_MANAGEMENT_SYSTEM__USER = 1;
 
 	/**
-	 * The feature id for the '<em><b>Order</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Order</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1001,6 +1001,52 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	int STORE_MANAGEMENT_SYSTEM_OPERATION_COUNT = 0;
 
 	/**
+	 * The meta object id for the '{@link homeworkPizzaShop.impl.WebsiteImpl <em>Website</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see homeworkPizzaShop.impl.WebsiteImpl
+	 * @see homeworkPizzaShop.impl.HomeworkPizzaShopPackageImpl#getWebsite()
+	 * @generated
+	 */
+	int WEBSITE = 16;
+
+	/**
+	 * The feature id for the '<em><b>Webpage</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEBSITE__WEBPAGE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Domain</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEBSITE__DOMAIN = 1;
+
+	/**
+	 * The number of structural features of the '<em>Website</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEBSITE_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Website</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEBSITE_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link homeworkPizzaShop.Status <em>Status</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1008,7 +1054,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @see homeworkPizzaShop.impl.HomeworkPizzaShopPackageImpl#getStatus()
 	 * @generated
 	 */
-	int STATUS = 16;
+	int STATUS = 17;
 
 	/**
 	 * The meta object id for the '{@link homeworkPizzaShop.Category <em>Category</em>}' enum.
@@ -1018,7 +1064,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @see homeworkPizzaShop.impl.HomeworkPizzaShopPackageImpl#getCategory()
 	 * @generated
 	 */
-	int CATEGORY = 17;
+	int CATEGORY = 18;
 
 	/**
 	 * Returns the meta object for class '{@link homeworkPizzaShop.BrowsingPage <em>Browsing Page</em>}'.
@@ -1170,26 +1216,15 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EAttribute getShoppingCart_TotalPrice();
 
 	/**
-	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.ShoppingCart#getDiscrount <em>Discrount</em>}'.
+	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.ShoppingCart#getDiscount <em>Discount</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Discrount</em>'.
-	 * @see homeworkPizzaShop.ShoppingCart#getDiscrount()
+	 * @return the meta object for the attribute '<em>Discount</em>'.
+	 * @see homeworkPizzaShop.ShoppingCart#getDiscount()
 	 * @see #getShoppingCart()
 	 * @generated
 	 */
-	EAttribute getShoppingCart_Discrount();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link homeworkPizzaShop.ShoppingCart#getCustomer <em>Customer</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Customer</em>'.
-	 * @see homeworkPizzaShop.ShoppingCart#getCustomer()
-	 * @see #getShoppingCart()
-	 * @generated
-	 */
-	EReference getShoppingCart_Customer();
+	EAttribute getShoppingCart_Discount();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.ShoppingCart#getCartitem <em>Cartitem</em>}'.
@@ -1257,10 +1292,10 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EAttribute getProduct_InStock();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.Product#getCartitem <em>Cartitem</em>}'.
+	 * Returns the meta object for the reference list '{@link homeworkPizzaShop.Product#getCartitem <em>Cartitem</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Cartitem</em>'.
+	 * @return the meta object for the reference list '<em>Cartitem</em>'.
 	 * @see homeworkPizzaShop.Product#getCartitem()
 	 * @see #getProduct()
 	 * @generated
@@ -1310,17 +1345,6 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EClass getWebpage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Webpage#getURL <em>URL</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>URL</em>'.
-	 * @see homeworkPizzaShop.Webpage#getURL()
-	 * @see #getWebpage()
-	 * @generated
-	 */
-	EAttribute getWebpage_URL();
-
-	/**
 	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Webpage#getTitle <em>Title</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1330,6 +1354,17 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getWebpage_Title();
+
+	/**
+	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Webpage#getUrl <em>Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Url</em>'.
+	 * @see homeworkPizzaShop.Webpage#getUrl()
+	 * @see #getWebpage()
+	 * @generated
+	 */
+	EAttribute getWebpage_Url();
 
 	/**
 	 * Returns the meta object for class '{@link homeworkPizzaShop.Customer <em>Customer</em>}'.
@@ -1351,6 +1386,17 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getCustomer_CustomerID();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.Customer#getCustomer <em>Customer</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Customer</em>'.
+	 * @see homeworkPizzaShop.Customer#getCustomer()
+	 * @see #getCustomer()
+	 * @generated
+	 */
+	EReference getCustomer_Customer();
 
 	/**
 	 * Returns the meta object for class '{@link homeworkPizzaShop.InformationPage <em>Information Page</em>}'.
@@ -1460,10 +1506,10 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EReference getOrder_Payment();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.Order#getCustomer <em>Customer</em>}'.
+	 * Returns the meta object for the containment reference '{@link homeworkPizzaShop.Order#getCustomer <em>Customer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Customer</em>'.
+	 * @return the meta object for the containment reference '<em>Customer</em>'.
 	 * @see homeworkPizzaShop.Order#getCustomer()
 	 * @see #getOrder()
 	 * @generated
@@ -1471,10 +1517,10 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EReference getOrder_Customer();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.Order#getEmployee <em>Employee</em>}'.
+	 * Returns the meta object for the reference list '{@link homeworkPizzaShop.Order#getEmployee <em>Employee</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Employee</em>'.
+	 * @return the meta object for the reference list '<em>Employee</em>'.
 	 * @see homeworkPizzaShop.Order#getEmployee()
 	 * @see #getOrder()
 	 * @generated
@@ -1557,26 +1603,26 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EReference getWebapplication_Storemanagementsystem();
 
 	/**
-	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Webapplication#getDomain <em>Domain</em>}'.
+	 * Returns the meta object for the containment reference '{@link homeworkPizzaShop.Webapplication#getWebsite <em>Website</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Domain</em>'.
-	 * @see homeworkPizzaShop.Webapplication#getDomain()
+	 * @return the meta object for the containment reference '<em>Website</em>'.
+	 * @see homeworkPizzaShop.Webapplication#getWebsite()
 	 * @see #getWebapplication()
 	 * @generated
 	 */
-	EAttribute getWebapplication_Domain();
+	EReference getWebapplication_Website();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.Webapplication#getWebpage <em>Webpage</em>}'.
+	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Webapplication#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Webpage</em>'.
-	 * @see homeworkPizzaShop.Webapplication#getWebpage()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see homeworkPizzaShop.Webapplication#getName()
 	 * @see #getWebapplication()
 	 * @generated
 	 */
-	EReference getWebapplication_Webpage();
+	EAttribute getWebapplication_Name();
 
 	/**
 	 * Returns the meta object for class '{@link homeworkPizzaShop.Payment <em>Payment</em>}'.
@@ -1589,15 +1635,15 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EClass getPayment();
 
 	/**
-	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Payment#getCreditCardInfomration <em>Credit Card Infomration</em>}'.
+	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Payment#getTransactionNumber <em>Transaction Number</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Credit Card Infomration</em>'.
-	 * @see homeworkPizzaShop.Payment#getCreditCardInfomration()
+	 * @return the meta object for the attribute '<em>Transaction Number</em>'.
+	 * @see homeworkPizzaShop.Payment#getTransactionNumber()
 	 * @see #getPayment()
 	 * @generated
 	 */
-	EAttribute getPayment_CreditCardInfomration();
+	EAttribute getPayment_TransactionNumber();
 
 	/**
 	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Payment#isIsSucessful <em>Is Sucessful</em>}'.
@@ -1643,15 +1689,47 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 	EReference getStoreManagementSystem_User();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.StoreManagementSystem#getOrder <em>Order</em>}'.
+	 * Returns the meta object for the reference list '{@link homeworkPizzaShop.StoreManagementSystem#getOrder <em>Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Order</em>'.
+	 * @return the meta object for the reference list '<em>Order</em>'.
 	 * @see homeworkPizzaShop.StoreManagementSystem#getOrder()
 	 * @see #getStoreManagementSystem()
 	 * @generated
 	 */
 	EReference getStoreManagementSystem_Order();
+
+	/**
+	 * Returns the meta object for class '{@link homeworkPizzaShop.Website <em>Website</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Website</em>'.
+	 * @see homeworkPizzaShop.Website
+	 * @generated
+	 */
+	EClass getWebsite();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link homeworkPizzaShop.Website#getWebpage <em>Webpage</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Webpage</em>'.
+	 * @see homeworkPizzaShop.Website#getWebpage()
+	 * @see #getWebsite()
+	 * @generated
+	 */
+	EReference getWebsite_Webpage();
+
+	/**
+	 * Returns the meta object for the attribute '{@link homeworkPizzaShop.Website#getDomain <em>Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Domain</em>'.
+	 * @see homeworkPizzaShop.Website#getDomain()
+	 * @see #getWebsite()
+	 * @generated
+	 */
+	EAttribute getWebsite_Domain();
 
 	/**
 	 * Returns the meta object for enum '{@link homeworkPizzaShop.Status <em>Status</em>}'.
@@ -1819,20 +1897,12 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EAttribute SHOPPING_CART__TOTAL_PRICE = eINSTANCE.getShoppingCart_TotalPrice();
 
 		/**
-		 * The meta object literal for the '<em><b>Discrount</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Discount</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SHOPPING_CART__DISCROUNT = eINSTANCE.getShoppingCart_Discrount();
-
-		/**
-		 * The meta object literal for the '<em><b>Customer</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SHOPPING_CART__CUSTOMER = eINSTANCE.getShoppingCart_Customer();
+		EAttribute SHOPPING_CART__DISCOUNT = eINSTANCE.getShoppingCart_Discount();
 
 		/**
 		 * The meta object literal for the '<em><b>Cartitem</b></em>' containment reference list feature.
@@ -1885,7 +1955,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EAttribute PRODUCT__IN_STOCK = eINSTANCE.getProduct_InStock();
 
 		/**
-		 * The meta object literal for the '<em><b>Cartitem</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Cartitem</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1929,12 +1999,12 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EClass WEBPAGE = eINSTANCE.getWebpage();
 
 		/**
-		 * The meta object literal for the '<em><b>URL</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Url</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute WEBPAGE__URL = eINSTANCE.getWebpage_URL();
+		EAttribute WEBPAGE__URL = eINSTANCE.getWebpage_Url();
 
 		/**
 		 * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
@@ -1961,6 +2031,14 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CUSTOMER__CUSTOMER_ID = eINSTANCE.getCustomer_CustomerID();
+
+		/**
+		 * The meta object literal for the '<em><b>Customer</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CUSTOMER__CUSTOMER = eINSTANCE.getCustomer_Customer();
 
 		/**
 		 * The meta object literal for the '{@link homeworkPizzaShop.impl.InformationPageImpl <em>Information Page</em>}' class.
@@ -2049,7 +2127,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EReference ORDER__PAYMENT = eINSTANCE.getOrder_Payment();
 
 		/**
-		 * The meta object literal for the '<em><b>Customer</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Customer</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2057,7 +2135,7 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EReference ORDER__CUSTOMER = eINSTANCE.getOrder_Customer();
 
 		/**
-		 * The meta object literal for the '<em><b>Employee</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Employee</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2125,20 +2203,20 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EReference WEBAPPLICATION__STOREMANAGEMENTSYSTEM = eINSTANCE.getWebapplication_Storemanagementsystem();
 
 		/**
-		 * The meta object literal for the '<em><b>Domain</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Website</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute WEBAPPLICATION__DOMAIN = eINSTANCE.getWebapplication_Domain();
+		EReference WEBAPPLICATION__WEBSITE = eINSTANCE.getWebapplication_Website();
 
 		/**
-		 * The meta object literal for the '<em><b>Webpage</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEBAPPLICATION__WEBPAGE = eINSTANCE.getWebapplication_Webpage();
+		EAttribute WEBAPPLICATION__NAME = eINSTANCE.getWebapplication_Name();
 
 		/**
 		 * The meta object literal for the '{@link homeworkPizzaShop.impl.PaymentImpl <em>Payment</em>}' class.
@@ -2151,12 +2229,12 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EClass PAYMENT = eINSTANCE.getPayment();
 
 		/**
-		 * The meta object literal for the '<em><b>Credit Card Infomration</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Transaction Number</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute PAYMENT__CREDIT_CARD_INFOMRATION = eINSTANCE.getPayment_CreditCardInfomration();
+		EAttribute PAYMENT__TRANSACTION_NUMBER = eINSTANCE.getPayment_TransactionNumber();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Sucessful</b></em>' attribute feature.
@@ -2193,12 +2271,38 @@ public interface HomeworkPizzaShopPackage extends EPackage {
 		EReference STORE_MANAGEMENT_SYSTEM__USER = eINSTANCE.getStoreManagementSystem_User();
 
 		/**
-		 * The meta object literal for the '<em><b>Order</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Order</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference STORE_MANAGEMENT_SYSTEM__ORDER = eINSTANCE.getStoreManagementSystem_Order();
+
+		/**
+		 * The meta object literal for the '{@link homeworkPizzaShop.impl.WebsiteImpl <em>Website</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see homeworkPizzaShop.impl.WebsiteImpl
+		 * @see homeworkPizzaShop.impl.HomeworkPizzaShopPackageImpl#getWebsite()
+		 * @generated
+		 */
+		EClass WEBSITE = eINSTANCE.getWebsite();
+
+		/**
+		 * The meta object literal for the '<em><b>Webpage</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WEBSITE__WEBPAGE = eINSTANCE.getWebsite_Webpage();
+
+		/**
+		 * The meta object literal for the '<em><b>Domain</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WEBSITE__DOMAIN = eINSTANCE.getWebsite_Domain();
 
 		/**
 		 * The meta object literal for the '{@link homeworkPizzaShop.Status <em>Status</em>}' enum.

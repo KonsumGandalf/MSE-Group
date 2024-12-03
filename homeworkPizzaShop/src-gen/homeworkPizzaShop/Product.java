@@ -116,13 +116,13 @@ public interface Product extends EObject {
 	void setInStock(boolean value);
 
 	/**
-	 * Returns the value of the '<em><b>Cartitem</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Cartitem</b></em>' reference list.
 	 * The list contents are of type {@link homeworkPizzaShop.CartItem}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Cartitem</em>' containment reference list.
+	 * @return the value of the '<em>Cartitem</em>' reference list.
 	 * @see homeworkPizzaShop.HomeworkPizzaShopPackage#getProduct_Cartitem()
-	 * @model containment="true" required="true"
+	 * @model required="true"
 	 * @generated
 	 */
 	EList<CartItem> getCartitem();
