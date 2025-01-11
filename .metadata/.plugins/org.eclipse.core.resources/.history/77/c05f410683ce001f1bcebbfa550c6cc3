@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_QyE1sM37Ee-U0M-MrLO3QA" name="requirements" metaclassReference="_snxUwM38Ee-U0M-MrLO3QA">
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_snxUwM38Ee-U0M-MrLO3QA" alias="Classifier">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Q8fV8M37Ee-U0M-MrLO3QA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Q8fV8c37Ee-U0M-MrLO3QA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_wPNVgM38Ee-U0M-MrLO3QA" name="Requirement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VWz9cM4BEe-U0M-MrLO3QA" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZSfI0M4BEe-U0M-MrLO3QA" name="name" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_esf6cM4BEe-U0M-MrLO3QA" name="description" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6S85EM4BEe-U0M-MrLO3QA" name="status" type="_fPHKMM3_Ee-U0M-MrLO3QA" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AE7ewM4CEe-U0M-MrLO3QA" name="importance" type="_-RbywM3_Ee-U0M-MrLO3QA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D0qf4M4CEe-U0M-MrLO3QA" name="effort" type="_Ewr4sM4BEe-U0M-MrLO3QA" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jS8u4M4GEe-U0M-MrLO3QA" name="author" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oSIlsM4GEe-U0M-MrLO3QA" name="version" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sisGYM5-Ee-8H_HfhpuGzA" name="derived from" type="_wPNVgM38Ee-U0M-MrLO3QA" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3Xr6AM5-Ee-8H_HfhpuGzA" name="verification" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5yZsIM6CEe-8H_HfhpuGzA" name="base_Classifier" association="_5yRJQM6CEe-8H_HfhpuGzA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Classifier"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5yZsIc6CEe-8H_HfhpuGzA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_fPHKMM3_Ee-U0M-MrLO3QA" name="StatusEnumeration">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_msN08M3_Ee-U0M-MrLO3QA" name="Approved"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2ZPHcM3_Ee-U0M-MrLO3QA" name="Rejected"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_39V-gM3_Ee-U0M-MrLO3QA" name="InProgress"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_5g8fQM3_Ee-U0M-MrLO3QA" name="Completed"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6zpdQM3_Ee-U0M-MrLO3QA" name="Validated"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_77JQ0M3_Ee-U0M-MrLO3QA" name="Deferred"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_-RbywM3_Ee-U0M-MrLO3QA" name="ImportanceEnumeration">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DBWegM4AEe-U0M-MrLO3QA" name="must"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EemfoM4AEe-U0M-MrLO3QA" name="should"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FlqOUM4AEe-U0M-MrLO3QA" name="could"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_GeU7sM4AEe-U0M-MrLO3QA" name="won't"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ewr4sM4BEe-U0M-MrLO3QA" name="EffortEnumeration">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Ko63YM4BEe-U0M-MrLO3QA" name="Small"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_LxDkIM4BEe-U0M-MrLO3QA" name="Medium"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Mr1xYM4BEe-U0M-MrLO3QA" name="Large"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_bDpvAM4CEe-U0M-MrLO3QA" name="External Interface Requirements">
+    <generalization xmi:type="uml:Generalization" xmi:id="_63CgwM4FEe-U0M-MrLO3QA" general="_wPNVgM38Ee-U0M-MrLO3QA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OuDuEM6AEe-8H_HfhpuGzA" name="interfaceName" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_yb3gsM4EEe-U0M-MrLO3QA" name="Functional Requirements">
+    <generalization xmi:type="uml:Generalization" xmi:id="_7mg14M4FEe-U0M-MrLO3QA" general="_wPNVgM38Ee-U0M-MrLO3QA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_X5DTcM5_Ee-8H_HfhpuGzA" name="userGroup" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_uXNjAM4FEe-U0M-MrLO3QA" name="Design Constraints">
+    <generalization xmi:type="uml:Generalization" xmi:id="_LjgTEM5_Ee-8H_HfhpuGzA" general="_wPNVgM38Ee-U0M-MrLO3QA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_zoUQQM4FEe-U0M-MrLO3QA" name="Performance">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9sMwAM4FEe-U0M-MrLO3QA" general="_wPNVgM38Ee-U0M-MrLO3QA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_5yRJQM6CEe-8H_HfhpuGzA" name="E_Requirement_Classifier12" memberEnd="_5yZFEM6CEe-8H_HfhpuGzA _5yZsIM6CEe-8H_HfhpuGzA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_5yZFEM6CEe-8H_HfhpuGzA" name="extension_Requirement" type="_wPNVgM38Ee-U0M-MrLO3QA" aggregation="composite" association="_5yRJQM6CEe-8H_HfhpuGzA"/>
+  </packagedElement>
+</uml:Profile>

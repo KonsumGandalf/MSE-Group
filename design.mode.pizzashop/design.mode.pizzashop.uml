@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:requirements="http:///schemas/requirements/_lfVHoM6aEe-8H_HfhpuGzA/2" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/requirements/_lfVHoM6aEe-8H_HfhpuGzA/2 ../requirements.model.profile/requirements.model.profile.profile.uml#_lfVHoc6aEe-8H_HfhpuGzA">
+  <uml:Model xmi:id="_n8_M8M6GEe-8H_HfhpuGzA" name="design">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_n_B0UM6GEe-8H_HfhpuGzA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_aQ_kwM6LEe-8H_HfhpuGzA" name="PizzaShop">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_OgV50M6OEe-8H_HfhpuGzA" name="Register customer"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_h7QaYM6OEe-8H_HfhpuGzA" name="Manage users"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_MMGUYM6QEe-8H_HfhpuGzA" name="&lt;includes>" client="_OgV50M6OEe-8H_HfhpuGzA" supplier="_h7QaYM6OEe-8H_HfhpuGzA"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_etZFUM6QEe-8H_HfhpuGzA" name="Integrate third-party"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_bQM_AM6LEe-8H_HfhpuGzA" name="Customer"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_cH2YsM6LEe-8H_HfhpuGzA" name="Administrator"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_8jBGsM6PEe-8H_HfhpuGzA" memberEnd="_8jKQos6PEe-8H_HfhpuGzA _8jKQo86PEe-8H_HfhpuGzA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8jKQoM6PEe-8H_HfhpuGzA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8jKQoc6PEe-8H_HfhpuGzA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8jKQos6PEe-8H_HfhpuGzA" name="register customer" type="_OgV50M6OEe-8H_HfhpuGzA" association="_8jBGsM6PEe-8H_HfhpuGzA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8jKQo86PEe-8H_HfhpuGzA" name="customer" type="_bQM_AM6LEe-8H_HfhpuGzA" association="_8jBGsM6PEe-8H_HfhpuGzA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_d0lAQM6LEe-8H_HfhpuGzA" name="Employee"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-t_wgM6PEe-8H_HfhpuGzA" memberEnd="_-t_wg86PEe-8H_HfhpuGzA _-t_whM6PEe-8H_HfhpuGzA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-t_wgc6PEe-8H_HfhpuGzA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-t_wgs6PEe-8H_HfhpuGzA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-t_wg86PEe-8H_HfhpuGzA" name="manage users" type="_h7QaYM6OEe-8H_HfhpuGzA" association="_-t_wgM6PEe-8H_HfhpuGzA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-t_whM6PEe-8H_HfhpuGzA" name="administrator" type="_cH2YsM6LEe-8H_HfhpuGzA" association="_-t_wgM6PEe-8H_HfhpuGzA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_iHKBAM6REe-8H_HfhpuGzA" name="Customize order"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cRSAgM6WEe-8H_HfhpuGzA" name="View order dashboard"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_HjqsgM6XEe-8H_HfhpuGzA" name="Update order status"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MjN-cM6REe-8H_HfhpuGzA" memberEnd="_MjPzoc6REe-8H_HfhpuGzA _MjPzos6REe-8H_HfhpuGzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MjPMkM6REe-8H_HfhpuGzA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MjPzoM6REe-8H_HfhpuGzA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MjPzoc6REe-8H_HfhpuGzA" name="integrate third-party" type="_etZFUM6QEe-8H_HfhpuGzA" association="_MjN-cM6REe-8H_HfhpuGzA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MjPzos6REe-8H_HfhpuGzA" name="administrator" type="_cH2YsM6LEe-8H_HfhpuGzA" association="_MjN-cM6REe-8H_HfhpuGzA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mqXGcM6REe-8H_HfhpuGzA" memberEnd="_mqXtgs6REe-8H_HfhpuGzA _mqXtg86REe-8H_HfhpuGzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mqXtgM6REe-8H_HfhpuGzA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mqXtgc6REe-8H_HfhpuGzA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mqXtgs6REe-8H_HfhpuGzA" name="customize order" type="_iHKBAM6REe-8H_HfhpuGzA" association="_mqXGcM6REe-8H_HfhpuGzA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_mqXtg86REe-8H_HfhpuGzA" name="customer" type="_bQM_AM6LEe-8H_HfhpuGzA" association="_mqXGcM6REe-8H_HfhpuGzA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ga9_EM6XEe-8H_HfhpuGzA" memberEnd="_Ga9_E86XEe-8H_HfhpuGzA _Ga9_FM6XEe-8H_HfhpuGzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ga9_Ec6XEe-8H_HfhpuGzA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ga9_Es6XEe-8H_HfhpuGzA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ga9_E86XEe-8H_HfhpuGzA" name="view dashboard" type="_cRSAgM6WEe-8H_HfhpuGzA" association="_Ga9_EM6XEe-8H_HfhpuGzA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ga9_FM6XEe-8H_HfhpuGzA" name="employee" type="_d0lAQM6LEe-8H_HfhpuGzA" association="_Ga9_EM6XEe-8H_HfhpuGzA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VgvEUM6XEe-8H_HfhpuGzA" memberEnd="_VgvrYs6XEe-8H_HfhpuGzA _VgwScM6XEe-8H_HfhpuGzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VgvrYM6XEe-8H_HfhpuGzA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VgvrYc6XEe-8H_HfhpuGzA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VgvrYs6XEe-8H_HfhpuGzA" name="usecase12" type="_HjqsgM6XEe-8H_HfhpuGzA" association="_VgvEUM6XEe-8H_HfhpuGzA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_VgwScM6XEe-8H_HfhpuGzA" name="employee" type="_d0lAQM6LEe-8H_HfhpuGzA" association="_VgvEUM6XEe-8H_HfhpuGzA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_fSaNAM6HEe-8H_HfhpuGzA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cLRUsM9-Ee-hp5NCK8lWqA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLRUsc9-Ee-hp5NCK8lWqA" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLRUss9-Ee-hp5NCK8lWqA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLRUs89-Ee-hp5NCK8lWqA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLRUtM9-Ee-hp5NCK8lWqA" key="Date" value="2025-01-09"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLRUtc9-Ee-hp5NCK8lWqA" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fSjW8M6HEe-8H_HfhpuGzA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../requirements.model.profile/requirements.model.profile.profile.uml#_lfVHoc6aEe-8H_HfhpuGzA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="../requirements.model.profile/requirements.model.profile.profile.uml#_QyE1sM37Ee-U0M-MrLO3QA"/>
+    </profileApplication>
+  </uml:Model>
+  <requirements:FunctionalRequirements xmi:id="_P-HfYM6OEe-8H_HfhpuGzA" id="REQ-009" name="Customer Registration" description="The system shall provide a secure registration interface" effort="Medium" author="Group 14" version="1.0" referencefrom="_m8wlYM6OEe-8H_HfhpuGzA" verification="Functional testing by setting up customer accounts" base_Classifier="_OgV50M6OEe-8H_HfhpuGzA" userGroup="Customer"/>
+  <requirements:FunctionalRequirements xmi:id="_m8wlYM6OEe-8H_HfhpuGzA" id="REQ-013" name="User Management" description="Administrators shall  have access to manage all user accounts." effort="Large" author="Group 14" version="1.0" verification="Functional testing by setting up different account types" base_Classifier="_h7QaYM6OEe-8H_HfhpuGzA" userGroup="Administrator"/>
+  <requirements:FunctionalRequirements xmi:id="_I45BwM6REe-8H_HfhpuGzA" base_Classifier="_etZFUM6QEe-8H_HfhpuGzA"/>
+  <requirements:FunctionalRequirements xmi:id="_ak7JMM6SEe-8H_HfhpuGzA" id="REQ-010" name="Order Customization" description="Customers shall be able to customize pizzas by selecting toppings, crust types, and sizes." importance="should" author="Group14" version="1.0" verification="Functional testing by customizing a mock order" base_Classifier="_iHKBAM6REe-8H_HfhpuGzA" userGroup="Customer"/>
+  <requirements:FunctionalRequirements xmi:id="_1v36wM6WEe-8H_HfhpuGzA" id="REQ-011" name="Order Dashboard" description="The system shall provide a dashboard to view active orders in real time." importance="should" effort="Medium" author="Group 14" version="1.0" base_Classifier="_cRSAgM6WEe-8H_HfhpuGzA" userGroup="Employee"/>
+  <requirements:FunctionalRequirements xmi:id="_Lb47QM6XEe-8H_HfhpuGzA" id="REQ-012" name="Order Status Updates" description="Employees shall have the ability to update order statuses " author="Group 14" version="1.0" verification="Test updates of order statuses and how they are displayed on the customer interface." base_Classifier="_HjqsgM6XEe-8H_HfhpuGzA" userGroup="Employee"/>
+</xmi:XMI>

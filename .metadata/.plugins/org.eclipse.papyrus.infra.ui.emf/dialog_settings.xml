@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="platform:/resource/requirements.model.profile/requirements.model.profile.profile.uml#_wPNVgM38Ee-U0M-MrLO3QA"/>
+				<item value="platform:/resource/requirements.model.profile/requirements.model.profile.profile.uml#_Ewr4sM4BEe-U0M-MrLO3QA"/>
+				<item value="platform:/resource/requirements.model.profile/requirements.model.profile.profile.uml#_-RbywM3_Ee-U0M-MrLO3QA"/>
+				<item value="platform:/resource/requirements.model.profile/requirements.model.profile.profile.uml#_fPHKMM3_Ee-U0M-MrLO3QA"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/requirements.model.profile/requirements.model.profile.profile.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/design.mode.pizzashop/design.mode.pizzashop.uml:requirements:Requirement:derivedfrom">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/design.mode.pizzashop/design.mode.pizzashop.uml#_m8wlYM6OEe-8H_HfhpuGzA"/>
+			</list>
+		</section>
+	</section>
+</section>

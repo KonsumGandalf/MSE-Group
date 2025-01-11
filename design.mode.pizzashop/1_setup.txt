@@ -1,0 +1,26 @@
+1. Setup
+Im ersten Schritt ist es wichtig, den Zweck der Modellierung zu erfassen und alle notwendigen Akteure mit einzubeziehen. Die Modellierung ist nie Selbstzweck und sollte sich in den Softwareentwicklungsprozess einbetten und einen Mehrwert bieten. Daher sollte bereits in dieser Phase geklärt werden, welches Interesse mit der Modellierung verfolgt wird und welches Ziel erreicht werden soll. Wer kann zur Zielerreichung beitragen und wer kann welche Informationen einbringen. Zur Identifizierung des Zweckes bieten wir einen einfachen Fragenkatalog, der eine grobe Orientierung bietet. Bspw. gibt es konkrete Rahmenbedingungen an die Modellierung, welche Sprache soll verwendet werden oder gibt es bereits eine Anforderungsbeschreibung für das zu modellierende System.[https://www.q-modelino.de/de/q-modelino/schritte]
+
+-----------------------------------------------------------------------------------------
+
+Purpose of Modeling
+The purpose is to develop an web application for a Pizza shop, allowing customers to place orders and employees to view and manage them. The modeling aims to establish a shared understanding of the system requirements. It should also help to identify the components and interfaces needed to implement the required functionalities. The model should also help tp detect gaps and ambiguities in the previously defined requirements before the actual development begins.
+
+
+Involved Stakeholders
+
+Customers:
+Customers use the online shop to place orders. They expect reliable payment options, an intuitive user interface, and a seamless ordering process.
+
+Employees:
+They manage and process orders through the online shop, require access to customer data and order details. They expect the web application to simplify their workflow by providing an overview of current orders.
+
+Administrators:
+Administrators manage user access, permissions, and system settings. They are responsible for maintaining product data, categories, and pricing.
+
+Development Team:
+The development team implements the requirements into a functional system. 
+
+
+Modeling Constraints
+UML shall be thestandard in this Project to use for modeling
