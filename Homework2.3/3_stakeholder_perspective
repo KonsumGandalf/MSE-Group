@@ -1,0 +1,10 @@
+Stakeholder Perspectives
+Ein System wird häufig von unterschiedlichen Akteuren genutzt. 
+Das Ziel in diesem Schritt ist zunächst die unterschiedlichen Perspektiven der einzelnen Akteure einzunehmen. 
+Das Ergebnis ist eine erst Übersicht zu bekommen von Anwendungsszenarien der unterschiedlichen Akteuren und diese zu beschreiben. 
+Das System wird hier als eine sogenannte BlackBox betrachtet. Wir beschreiben zunächst nur was die Akteure mit diese BlackBox machen können.
+
+-----------------------------------------------------------------------------------------
+
+ARCHIMATE VIEWPOINTS
+= define viewpoints for different stakeholders

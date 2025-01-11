@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EWHo4M6LEe-8H_HfhpuGzA" type="UseCase" name="1_Setup" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_aQ_kwc6LEe-8H_HfhpuGzA" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_aQ_kw86LEe-8H_HfhpuGzA" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_aQ_kxM6LEe-8H_HfhpuGzA" type="Package_PackagedElementCompartment">
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aQ_kxc6LEe-8H_HfhpuGzA"/>
+    </children>
+    <element xmi:type="uml:Package" href="design.mode.pizzashop.uml#_aQ_kwM6LEe-8H_HfhpuGzA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aQ_kws6LEe-8H_HfhpuGzA" x="540" y="157" width="461" height="444"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_bQONIM6LEe-8H_HfhpuGzA" type="Actor_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bQONIs6LEe-8H_HfhpuGzA" type="Actor_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bQONI86LEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bQONJM6LEe-8H_HfhpuGzA" type="Actor_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bQONJc6LEe-8H_HfhpuGzA" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bQONJs6LEe-8H_HfhpuGzA" type="Actor_QualifiedNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bQONJ86LEe-8H_HfhpuGzA" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bQONKM6LEe-8H_HfhpuGzA" type="Actor_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bQONKc6LEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <element xmi:type="uml:Actor" href="design.mode.pizzashop.uml#_bQM_AM6LEe-8H_HfhpuGzA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bQONIc6LEe-8H_HfhpuGzA" x="441" y="178"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_cH2Ysc6LEe-8H_HfhpuGzA" type="Actor_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cH2Ys86LEe-8H_HfhpuGzA" type="Actor_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cH2YtM6LEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cH2Ytc6LEe-8H_HfhpuGzA" type="Actor_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cH2Yts6LEe-8H_HfhpuGzA" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cH2Yt86LEe-8H_HfhpuGzA" type="Actor_QualifiedNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cH2YuM6LEe-8H_HfhpuGzA" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cH2Yuc6LEe-8H_HfhpuGzA" type="Actor_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cH2Yus6LEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <element xmi:type="uml:Actor" href="design.mode.pizzashop.uml#_cH2YsM6LEe-8H_HfhpuGzA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cH2Yss6LEe-8H_HfhpuGzA" x="1112" y="158"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_d0lAQc6LEe-8H_HfhpuGzA" type="Actor_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_d0lAQ86LEe-8H_HfhpuGzA" type="Actor_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_d0lARM6LEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_d0lARc6LEe-8H_HfhpuGzA" type="Actor_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_d0lARs6LEe-8H_HfhpuGzA" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_d0lAR86LEe-8H_HfhpuGzA" type="Actor_QualifiedNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_d0lASM6LEe-8H_HfhpuGzA" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_d0lASc6LEe-8H_HfhpuGzA" type="Actor_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_d0lASs6LEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <element xmi:type="uml:Actor" href="design.mode.pizzashop.uml#_d0lAQM6LEe-8H_HfhpuGzA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d0lAQs6LEe-8H_HfhpuGzA" x="1127" y="314"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_qZH0AM6NEe-8H_HfhpuGzA" type="UseCase_Shape_CN">
+    <children xmi:type="notation:DecorationNode" xmi:id="_qZH0As6NEe-8H_HfhpuGzA" type="UseCase_NameLabel_CN"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_qZH0A86NEe-8H_HfhpuGzA" type="UseCase_FloatingNameLabel_CN">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_qZH0BM6NEe-8H_HfhpuGzA" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_qZH0Bc6NEe-8H_HfhpuGzA" type="UseCase_ExtensionPointCompartment_CN">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_qZH0Bs6NEe-8H_HfhpuGzA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_qZH0B86NEe-8H_HfhpuGzA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qZH0CM6NEe-8H_HfhpuGzA"/>
+    </children>
+    <element xmi:type="uml:UseCase" href="design.mode.pizzashop.uml#_qY-DAM6NEe-8H_HfhpuGzA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qZH0Ac6NEe-8H_HfhpuGzA" x="580" y="60" width="221" height="101"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_1rdD_c6NEe-8H_HfhpuGzA" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_1rdD_s6NEe-8H_HfhpuGzA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_1rdEAM6NEe-8H_HfhpuGzA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:UseCase" href="design.mode.pizzashop.uml#_qY-DAM6NEe-8H_HfhpuGzA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1rdD_86NEe-8H_HfhpuGzA" x="820" y="60"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_EWHo4c6LEe-8H_HfhpuGzA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_EWHo4s6LEe-8H_HfhpuGzA"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_EWHo486LEe-8H_HfhpuGzA" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
+    <owner xmi:type="uml:Model" href="design.mode.pizzashop.uml#_n8_M8M6GEe-8H_HfhpuGzA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="design.mode.pizzashop.uml#_n8_M8M6GEe-8H_HfhpuGzA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_1rdEAc6NEe-8H_HfhpuGzA" type="StereotypeCommentLink" source="_qZH0AM6NEe-8H_HfhpuGzA" target="_1rdD_c6NEe-8H_HfhpuGzA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_1rdEAs6NEe-8H_HfhpuGzA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_1rdEBs6NEe-8H_HfhpuGzA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:UseCase" href="design.mode.pizzashop.uml#_qY-DAM6NEe-8H_HfhpuGzA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1rdEA86NEe-8H_HfhpuGzA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1rdEBM6NEe-8H_HfhpuGzA"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1rdEBc6NEe-8H_HfhpuGzA"/>
+  </edges>
+</notation:Diagram>
