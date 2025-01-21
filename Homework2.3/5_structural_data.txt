@@ -1,0 +1,7 @@
+5. Structural Data
+Ein System erfüllt Funktionen oder Dienste für seine Benutzer. Zur Erbringen dieser Aufgaben werden häufig Daten benötigt oder verwendet. Das Ziel in diesem Schritt ist die verwendeten Daten zu beschreiben. Zu diesem Schritt gehören auch die Betrachtung wie Daten vom System verwaltet werden sollen und wie auf die Daten zugegriffen werden kann.
+
+-----------------------------------------------------------------------------------------
+Dieser Schritt wurde bereits in Hausaufgabe 1.2 mithilfe des Ecore-Frameworks bearbeitet. Aufgrund des erhöhten Detaillierungsgrads, der sich aus der Betrachtung des Datenzugriffs und der Datenverwaltung ergibt, hat sich jedoch die Komponentensicht verändert.
+Das Order Dashboard aus Schritt 2 wird beispielsweise in mehrere Klassen unterteilt: Order, StoreManagementSystem (welches auch den Server repräsentiert) und eine Payment-Klasse.
+Darüber hinaus wird auf die Third-Party-Integration verzichtet, da diese nun als Bibliothek ein Teil des Systems selbst wird und somit eigenständig durch das System gelöst wird. In ähnlicher Weise werden die Komponenten User Management und Order Tracking neu betrachtet und strukturiert.
