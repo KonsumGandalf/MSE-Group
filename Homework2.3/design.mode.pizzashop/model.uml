@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Vzuq4NgxEe-Wd43WeWXoew" name="2_System_Context">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_V2H3kNgxEe-Wd43WeWXoew">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_phKCUNgyEe-wmrv7moc64A" name="Customer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qBTiANgyEe-wmrv7moc64A" name="Adminstration"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qVebMNgyEe-wmrv7moc64A" name="Exmployee"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_QXjEINgzEe-wmrv7moc64A" name="Order Dashboard"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_TOIPsNgzEe-wmrv7moc64A" name="Third-Party Integration"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ZsxuINgzEe-wmrv7moc64A" name="Order Tracking"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_cQF_cNgzEe-wmrv7moc64A" name="User Management"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_gJ90ANgzEe-wmrv7moc64A" name="Server"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mLJTUNgzEe-wmrv7moc64A" memberEnd="_mLht0NgzEe-wmrv7moc64A _mLkKENgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mLcOQNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mLfRkNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mLht0NgzEe-wmrv7moc64A" name="order dashboard" type="_QXjEINgzEe-wmrv7moc64A" association="_mLJTUNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mLkKENgzEe-wmrv7moc64A" name="customer" type="_qVebMNgyEe-wmrv7moc64A" association="_mLJTUNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sSYXUNgzEe-wmrv7moc64A" memberEnd="_sSj9gNgzEe-wmrv7moc64A _sSlLoNgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sShhQNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sSivYNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sSj9gNgzEe-wmrv7moc64A" name="order dashboard" type="_QXjEINgzEe-wmrv7moc64A" association="_sSYXUNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_sSlLoNgzEe-wmrv7moc64A" name="adminstration" type="_qBTiANgyEe-wmrv7moc64A" association="_sSYXUNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s68zMNgzEe-wmrv7moc64A" memberEnd="_s7dJgNgzEe-wmrv7moc64A _s7gM0NgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s7V0wNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s7atQNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s7dJgNgzEe-wmrv7moc64A" name="order tracking" type="_ZsxuINgzEe-wmrv7moc64A" association="_s68zMNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_s7gM0NgzEe-wmrv7moc64A" name="adminstration" type="_qBTiANgyEe-wmrv7moc64A" association="_s68zMNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uVgFoNgzEe-wmrv7moc64A" memberEnd="_uVp2oNgzEe-wmrv7moc64A _uVrEwNgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVnaYNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uVoogNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uVp2oNgzEe-wmrv7moc64A" name="order tracking" type="_ZsxuINgzEe-wmrv7moc64A" association="_uVgFoNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uVrEwNgzEe-wmrv7moc64A" name="customer" type="_phKCUNgyEe-wmrv7moc64A" association="_uVgFoNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ynhUcNgzEe-wmrv7moc64A" memberEnd="_ynzoUNgzEe-wmrv7moc64A _yn02cNgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ynxMENgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ynyaMNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ynzoUNgzEe-wmrv7moc64A" name="user management" type="_cQF_cNgzEe-wmrv7moc64A" association="_ynhUcNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yn02cNgzEe-wmrv7moc64A" name="adminstration" type="_qBTiANgyEe-wmrv7moc64A" association="_ynhUcNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1U9yINgzEe-wmrv7moc64A" memberEnd="_1VZP8NgzEe-wmrv7moc64A _1VevgNgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1VVlkNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1VYB0NgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1VZP8NgzEe-wmrv7moc64A" name="third-party integration" type="_TOIPsNgzEe-wmrv7moc64A" association="_1U9yINgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1VevgNgzEe-wmrv7moc64A" name="order dashboard" type="_QXjEINgzEe-wmrv7moc64A" association="_1U9yINgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4JOpgNgzEe-wmrv7moc64A" memberEnd="_4JZooNgzEe-wmrv7moc64A _4JcE4NgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4JXMYNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4JZBkNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4JZooNgzEe-wmrv7moc64A" name="third-party integration" type="_TOIPsNgzEe-wmrv7moc64A" association="_4JOpgNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4JcE4NgzEe-wmrv7moc64A" name="order tracking" type="_ZsxuINgzEe-wmrv7moc64A" association="_4JOpgNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4uf5wNgzEe-wmrv7moc64A" memberEnd="_4vCFQNgzEe-wmrv7moc64A _4vKoINgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4u7XkNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4u_pANgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4vCFQNgzEe-wmrv7moc64A" name="server" type="_gJ90ANgzEe-wmrv7moc64A" association="_4uf5wNgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4vKoINgzEe-wmrv7moc64A" name="order dashboard" type="_QXjEINgzEe-wmrv7moc64A" association="_4uf5wNgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5gILANgzEe-wmrv7moc64A" memberEnd="_5gORodgzEe-wmrv7moc64A _5gQt4NgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5gNqkNgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5gORoNgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5gORodgzEe-wmrv7moc64A" name="server" type="_gJ90ANgzEe-wmrv7moc64A" association="_5gILANgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5gQt4NgzEe-wmrv7moc64A" name="user management" type="_cQF_cNgzEe-wmrv7moc64A" association="_5gILANgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6F804NgzEe-wmrv7moc64A" memberEnd="_6F_RINgzEe-wmrv7moc64A _6F_4MNgzEe-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6F-qENgzEe-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6F-qEdgzEe-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6F_RINgzEe-wmrv7moc64A" name="server" type="_gJ90ANgzEe-wmrv7moc64A" association="_6F804NgzEe-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6F_4MNgzEe-wmrv7moc64A" name="order tracking" type="_ZsxuINgzEe-wmrv7moc64A" association="_6F804NgzEe-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FlD8gNg0Ee-wmrv7moc64A" memberEnd="_FlKDINg0Ee-wmrv7moc64A _FlNGcNg0Ee-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FlIN8Ng0Ee-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FlJcENg0Ee-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FlKDINg0Ee-wmrv7moc64A" name="third-party integration" type="_TOIPsNgzEe-wmrv7moc64A" association="_FlD8gNg0Ee-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FlNGcNg0Ee-wmrv7moc64A" type="_qBTiANgyEe-wmrv7moc64A" association="_FlD8gNg0Ee-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OWt_YNg0Ee-wmrv7moc64A" memberEnd="_OW93ANg0Ee-wmrv7moc64A _OXCIcNg0Ee-wmrv7moc64A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OW7awNg0Ee-wmrv7moc64A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OW9P8Ng0Ee-wmrv7moc64A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OW93ANg0Ee-wmrv7moc64A" name="customer" type="_phKCUNgyEe-wmrv7moc64A" association="_OWt_YNg0Ee-wmrv7moc64A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OXCIcNg0Ee-wmrv7moc64A" name="user management" type="_cQF_cNgzEe-wmrv7moc64A" association="_OWt_YNg0Ee-wmrv7moc64A"/>
+  </packagedElement>
+</uml:Model>

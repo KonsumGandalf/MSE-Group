@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_7GrmMNhAEe-wmrv7moc64A" name="model3">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_7IaEgNhAEe-wmrv7moc64A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_KTMzsNhBEe-wmrv7moc64A" name="Create Order" node="_d2vr0NhBEe-wmrv7moc64A _XPBUcNhCEe-wmrv7moc64A _mArK4NhCEe-wmrv7moc64A _qtSD8NhCEe-wmrv7moc64A _2C4qQNhCEe-wmrv7moc64A _5OzMoNhCEe-wmrv7moc64A _PkjGoNhDEe-wmrv7moc64A _bc1jQNhDEe-wmrv7moc64A _gREHQNhDEe-wmrv7moc64A _mWcxINhDEe-wmrv7moc64A _qBNLoNhDEe-wmrv7moc64A _0HthkNhDEe-wmrv7moc64A _gahv0NhEEe-wmrv7moc64A _iV5QUNhEEe-wmrv7moc64A _wB_z8NhEEe-wmrv7moc64A _yXuVMNhEEe-wmrv7moc64A _-Y7dQNhEEe-wmrv7moc64A" group="_W5saINhBEe-wmrv7moc64A _rQn3ANhBEe-wmrv7moc64A _Cx9aYNhCEe-wmrv7moc64A _ewFnQNhEEe-wmrv7moc64A">
+    <edge xmi:type="uml:ControlFlow" xmi:id="__kpCcNhEEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A" target="_XPBUcNhCEe-wmrv7moc64A" source="_d2vr0NhBEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AwntYNhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A" target="_mArK4NhCEe-wmrv7moc64A" source="_XPBUcNhCEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EBExgNhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A" target="_qtSD8NhCEe-wmrv7moc64A" source="_mArK4NhCEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FVp-0NhFEe-wmrv7moc64A" target="_gahv0NhEEe-wmrv7moc64A" source="_qtSD8NhCEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GToqANhFEe-wmrv7moc64A" target="_2C4qQNhCEe-wmrv7moc64A" source="_gahv0NhEEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_H8yZINhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A" target="_5OzMoNhCEe-wmrv7moc64A" source="_2C4qQNhCEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JDDdoNhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A" target="_mWcxINhDEe-wmrv7moc64A" source="_5OzMoNhCEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_J225INhFEe-wmrv7moc64A" target="_gREHQNhDEe-wmrv7moc64A" source="_mWcxINhDEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KyXfINhFEe-wmrv7moc64A" inPartition="_Cx9aYNhCEe-wmrv7moc64A" target="_PkjGoNhDEe-wmrv7moc64A" source="_gREHQNhDEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LhmjsNhFEe-wmrv7moc64A" inPartition="_Cx9aYNhCEe-wmrv7moc64A" target="_bc1jQNhDEe-wmrv7moc64A" source="_PkjGoNhDEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MYAAMNhFEe-wmrv7moc64A" target="_qBNLoNhDEe-wmrv7moc64A" source="_bc1jQNhDEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NCqGwNhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A" target="_0HthkNhDEe-wmrv7moc64A" source="_qBNLoNhDEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Nxe7oNhFEe-wmrv7moc64A" target="_iV5QUNhEEe-wmrv7moc64A" source="_0HthkNhDEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_O0ZKINhFEe-wmrv7moc64A" inPartition="_ewFnQNhEEe-wmrv7moc64A" target="_wB_z8NhEEe-wmrv7moc64A" source="_iV5QUNhEEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Pcz1ANhFEe-wmrv7moc64A" target="_yXuVMNhEEe-wmrv7moc64A" source="_wB_z8NhEEe-wmrv7moc64A"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QUzM8NhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A" target="_-Y7dQNhEEe-wmrv7moc64A" source="_yXuVMNhEEe-wmrv7moc64A"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_W5saINhBEe-wmrv7moc64A" name="Customer" node="_d2vr0NhBEe-wmrv7moc64A _XPBUcNhCEe-wmrv7moc64A _mArK4NhCEe-wmrv7moc64A _qtSD8NhCEe-wmrv7moc64A _yXuVMNhEEe-wmrv7moc64A _-Y7dQNhEEe-wmrv7moc64A" edge="__kpCcNhEEe-wmrv7moc64A _AwntYNhFEe-wmrv7moc64A _EBExgNhFEe-wmrv7moc64A _QUzM8NhFEe-wmrv7moc64A"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_rQn3ANhBEe-wmrv7moc64A" name="StoreManagementSystem - Controller &amp; Services" node="_2C4qQNhCEe-wmrv7moc64A _5OzMoNhCEe-wmrv7moc64A _mWcxINhDEe-wmrv7moc64A _qBNLoNhDEe-wmrv7moc64A _0HthkNhDEe-wmrv7moc64A" edge="_H8yZINhFEe-wmrv7moc64A _JDDdoNhFEe-wmrv7moc64A _NCqGwNhFEe-wmrv7moc64A"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_Cx9aYNhCEe-wmrv7moc64A" name="Database" node="_PkjGoNhDEe-wmrv7moc64A _bc1jQNhDEe-wmrv7moc64A _gREHQNhDEe-wmrv7moc64A" edge="_KyXfINhFEe-wmrv7moc64A _LhmjsNhFEe-wmrv7moc64A"/>
+    <group xmi:type="uml:ActivityPartition" xmi:id="_ewFnQNhEEe-wmrv7moc64A" name="ActivityPartition18" node="_gahv0NhEEe-wmrv7moc64A _iV5QUNhEEe-wmrv7moc64A _wB_z8NhEEe-wmrv7moc64A" edge="_O0ZKINhFEe-wmrv7moc64A"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_d2vr0NhBEe-wmrv7moc64A" name="Initial" outgoing="__kpCcNhEEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_XPBUcNhCEe-wmrv7moc64A" name="Customer lands on &quot;create order&quot; Page" incoming="__kpCcNhEEe-wmrv7moc64A" outgoing="_AwntYNhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_mArK4NhCEe-wmrv7moc64A" name="Selects Products" incoming="_AwntYNhFEe-wmrv7moc64A" outgoing="_EBExgNhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_qtSD8NhCEe-wmrv7moc64A" name="Clicks confirm" incoming="_EBExgNhFEe-wmrv7moc64A" outgoing="_FVp-0NhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_2C4qQNhCEe-wmrv7moc64A" name="Controller recieves request" incoming="_GToqANhFEe-wmrv7moc64A" outgoing="_H8yZINhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_5OzMoNhCEe-wmrv7moc64A" name="Process Order" incoming="_H8yZINhFEe-wmrv7moc64A" outgoing="_JDDdoNhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_PkjGoNhDEe-wmrv7moc64A" name="Updates Order and Ingriendients Tables" incoming="_KyXfINhFEe-wmrv7moc64A" outgoing="_LhmjsNhFEe-wmrv7moc64A" inPartition="_Cx9aYNhCEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_bc1jQNhDEe-wmrv7moc64A" name="Receives Acknowledge Persitency" incoming="_LhmjsNhFEe-wmrv7moc64A" outgoing="_MYAAMNhFEe-wmrv7moc64A" inPartition="_Cx9aYNhCEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_gREHQNhDEe-wmrv7moc64A" name="Receives Update Request" incoming="_J225INhFEe-wmrv7moc64A" outgoing="_KyXfINhFEe-wmrv7moc64A" inPartition="_Cx9aYNhCEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_mWcxINhDEe-wmrv7moc64A" name="Service sends update request" incoming="_JDDdoNhFEe-wmrv7moc64A" outgoing="_J225INhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_qBNLoNhDEe-wmrv7moc64A" name="Service recieves acknowledgement" incoming="_MYAAMNhFEe-wmrv7moc64A" outgoing="_NCqGwNhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_0HthkNhDEe-wmrv7moc64A" name="Service sends success response" incoming="_NCqGwNhFEe-wmrv7moc64A" outgoing="_Nxe7oNhFEe-wmrv7moc64A" inPartition="_rQn3ANhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_gahv0NhEEe-wmrv7moc64A" name="Send order request" incoming="_FVp-0NhFEe-wmrv7moc64A" outgoing="_GToqANhFEe-wmrv7moc64A" inPartition="_ewFnQNhEEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_iV5QUNhEEe-wmrv7moc64A" name="Recieves success response" incoming="_Nxe7oNhFEe-wmrv7moc64A" outgoing="_O0ZKINhFEe-wmrv7moc64A" inPartition="_ewFnQNhEEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_wB_z8NhEEe-wmrv7moc64A" name="Display success message" incoming="_O0ZKINhFEe-wmrv7moc64A" outgoing="_Pcz1ANhFEe-wmrv7moc64A" inPartition="_ewFnQNhEEe-wmrv7moc64A"/>
+    <node xmi:type="uml:CreateObjectAction" xmi:id="_yXuVMNhEEe-wmrv7moc64A" name="Understands order was accepted " incoming="_Pcz1ANhFEe-wmrv7moc64A" outgoing="_QUzM8NhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_-Y7dQNhEEe-wmrv7moc64A" name="ActivityFinalNode21" incoming="_QUzM8NhFEe-wmrv7moc64A" inPartition="_W5saINhBEe-wmrv7moc64A"/>
+  </packagedElement>
+</uml:Model>

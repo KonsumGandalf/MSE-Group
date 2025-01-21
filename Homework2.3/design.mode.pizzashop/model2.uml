@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zWbhgNg2Ee-wmrv7moc64A" name="RegistrationView">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_zYQtgNg2Ee-wmrv7moc64A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_IW7qYNg4Ee-wmrv7moc64A" name="Customer View - Webapplication">
+    <packagedElement xmi:type="uml:Component" xmi:id="_PbOzkNg4Ee-wmrv7moc64A" name="CreateOrderView">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_qwQcQNg-Ee-wmrv7moc64A" client="_PbOzkNg4Ee-wmrv7moc64A" supplier="_Phfk4Ng-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_WP5EoNhAEe-wmrv7moc64A" client="_PbOzkNg4Ee-wmrv7moc64A" supplier="_OcHtsNg9Ee-wmrv7moc64A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_nLEF8Ng4Ee-wmrv7moc64A" name="CustomerRegisterLoginView">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_7RCuANg-Ee-wmrv7moc64A" client="_nLEF8Ng4Ee-wmrv7moc64A" supplier="_AJrGUNg-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_UUiyQNhAEe-wmrv7moc64A" client="_nLEF8Ng4Ee-wmrv7moc64A" supplier="_3lJ9ANg8Ee-wmrv7moc64A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_sUbMcNg4Ee-wmrv7moc64A" name="ReviewOrderView">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_9F1FYNg-Ee-wmrv7moc64A" client="_sUbMcNg4Ee-wmrv7moc64A" supplier="_agAg4Ng-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_YpagwNhAEe-wmrv7moc64A" client="_sUbMcNg4Ee-wmrv7moc64A" supplier="_Rbj6UNg9Ee-wmrv7moc64A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_yhgZwNg4Ee-wmrv7moc64A" name="CancelOrderView">
+      <packagedElement xmi:type="uml:Usage" xmi:id="__5vXcNg-Ee-wmrv7moc64A" client="_yhgZwNg4Ee-wmrv7moc64A" supplier="_YLIUMNg-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_cBfP0NhAEe-wmrv7moc64A" client="_yhgZwNg4Ee-wmrv7moc64A" supplier="_V_DToNg9Ee-wmrv7moc64A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_3rRI4Ng4Ee-wmrv7moc64A" name="CustomizeOrderVIew">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_-pKgYNg-Ee-wmrv7moc64A" client="_3rRI4Ng4Ee-wmrv7moc64A" supplier="_TZhmYNg-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_aa998NhAEe-wmrv7moc64A" client="_3rRI4Ng4Ee-wmrv7moc64A" supplier="_ZoEowNg9Ee-wmrv7moc64A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="__5S6QNg4Ee-wmrv7moc64A" name="StoreManagementSystem">
+    <packagedElement xmi:type="uml:Component" xmi:id="_znqXQNg9Ee-wmrv7moc64A" name="OrderHandler">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_LuRVcNg_Ee-wmrv7moc64A" client="_znqXQNg9Ee-wmrv7moc64A" supplier="_agAg4Ng-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_MwnjQNg_Ee-wmrv7moc64A" client="_znqXQNg9Ee-wmrv7moc64A" supplier="_Phfk4Ng-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_PCxzINg_Ee-wmrv7moc64A" client="_znqXQNg9Ee-wmrv7moc64A" supplier="_TZhmYNg-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_RK7ycNg_Ee-wmrv7moc64A" client="_znqXQNg9Ee-wmrv7moc64A" supplier="_YLIUMNg-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_C7dmkNhAEe-wmrv7moc64A" client="_znqXQNg9Ee-wmrv7moc64A" supplier="_1dBrgNg_Ee-wmrv7moc64A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_nCWAENg-Ee-wmrv7moc64A" name="RegisterLoginHandler">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_G0HvoNg_Ee-wmrv7moc64A" client="_nCWAENg-Ee-wmrv7moc64A" supplier="_AJrGUNg-Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_G_ZWENhAEe-wmrv7moc64A" client="_nCWAENg-Ee-wmrv7moc64A" supplier="_6rt98Ng_Ee-wmrv7moc64A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_3lJ9ANg8Ee-wmrv7moc64A" name="RegisterInput"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_OcHtsNg9Ee-wmrv7moc64A" name="CreateOrderInput">
+    <generalization xmi:type="uml:Generalization" xmi:id="_OcHtsdg9Ee-wmrv7moc64A" general="_nLEF8Ng4Ee-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Rbj6UNg9Ee-wmrv7moc64A" name="ReviewCreatedOrderInput">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Rbj6Udg9Ee-wmrv7moc64A" general="_nLEF8Ng4Ee-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_V_DToNg9Ee-wmrv7moc64A" name="CancleOrderInput">
+    <generalization xmi:type="uml:Generalization" xmi:id="_V_DTodg9Ee-wmrv7moc64A" general="_nLEF8Ng4Ee-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ZoEowNg9Ee-wmrv7moc64A" name="CustomizeOrderViewInput">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ZoEowdg9Ee-wmrv7moc64A" general="_nLEF8Ng4Ee-wmrv7moc64A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_AJrGUNg-Ee-wmrv7moc64A" name="CustomerRegisterLoginInformation"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Phfk4Ng-Ee-wmrv7moc64A" name="Order"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_TZhmYNg-Ee-wmrv7moc64A" name="CustomizeOrder"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YLIUMNg-Ee-wmrv7moc64A" name="Cancel Order"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_agAg4Ng-Ee-wmrv7moc64A" name="ReviewOrderDetails"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Vg5tINg_Ee-wmrv7moc64A" name="Peristency Server">
+    <packagedElement xmi:type="uml:Component" xmi:id="_f71a8Ng_Ee-wmrv7moc64A" name="Database">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_JbWbINhAEe-wmrv7moc64A" client="_f71a8Ng_Ee-wmrv7moc64A" supplier="_1dBrgNg_Ee-wmrv7moc64A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_MIRUYNhAEe-wmrv7moc64A" client="_f71a8Ng_Ee-wmrv7moc64A" supplier="_6rt98Ng_Ee-wmrv7moc64A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_1dBrgNg_Ee-wmrv7moc64A" name="OrderEntity"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_6rt98Ng_Ee-wmrv7moc64A" name="CustomerInformationEntity"/>
+</uml:Model>
