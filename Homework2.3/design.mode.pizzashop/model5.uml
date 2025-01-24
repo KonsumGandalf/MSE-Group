@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KYz30NqDEe-bJfKDgjlCUA" name="model5">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_KZsooNqDEe-bJfKDgjlCUA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_KZDIYNqDEe-bJfKDgjlCUA" name="ManageAccount" node="_Vcu4QNqDEe-bJfKDgjlCUA _mLgisNqDEe-bJfKDgjlCUA _rCLWsNqDEe-bJfKDgjlCUA _r-YgQNqDEe-bJfKDgjlCUA _tD1FYNqDEe-bJfKDgjlCUA _un0nsNqDEe-bJfKDgjlCUA _eTbWsNqEEe-bJfKDgjlCUA _lzpm4NqEEe-bJfKDgjlCUA _naV34NqEEe-bJfKDgjlCUA _rx9_cNqEEe-bJfKDgjlCUA _CRSsMNqFEe-bJfKDgjlCUA _jRyRoNqFEe-bJfKDgjlCUA _Jcn1ANqGEe-bJfKDgjlCUA _OxmVoNqGEe-bJfKDgjlCUA _F9hbcNqHEe-bJfKDgjlCUA _3eiz8NqHEe-bJfKDgjlCUA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_iqPl8NqEEe-bJfKDgjlCUA" target="_eTbWsNqEEe-bJfKDgjlCUA" source="_Vcu4QNqDEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ucPNUNqEEe-bJfKDgjlCUA" target="_rCLWsNqDEe-bJfKDgjlCUA" source="_eTbWsNqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_u_tGwNqEEe-bJfKDgjlCUA" target="_lzpm4NqEEe-bJfKDgjlCUA" source="_rCLWsNqDEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xGyIANqEEe-bJfKDgjlCUA" target="_naV34NqEEe-bJfKDgjlCUA" source="_lzpm4NqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yl7mkNqEEe-bJfKDgjlCUA" target="_mLgisNqDEe-bJfKDgjlCUA" source="_eTbWsNqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4XFF0NqEEe-bJfKDgjlCUA" target="_rx9_cNqEEe-bJfKDgjlCUA" source="_naV34NqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6ViWkNqEEe-bJfKDgjlCUA" name="[mail/password is unknown]" target="_eTbWsNqEEe-bJfKDgjlCUA" source="_rx9_cNqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IYTtwNqFEe-bJfKDgjlCUA" name="[mail/password is correct]" target="_CRSsMNqFEe-bJfKDgjlCUA" source="_rx9_cNqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ppvSMNqFEe-bJfKDgjlCUA" target="_jRyRoNqFEe-bJfKDgjlCUA" source="_mLgisNqDEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qSfUQNqFEe-bJfKDgjlCUA" target="_CRSsMNqFEe-bJfKDgjlCUA" source="_jRyRoNqFEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MwLQcNqGEe-bJfKDgjlCUA" name="[mail/password is incorrect]" target="_Jcn1ANqGEe-bJfKDgjlCUA" source="_rx9_cNqEEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QxiNENqGEe-bJfKDgjlCUA" target="_OxmVoNqGEe-bJfKDgjlCUA" source="_Jcn1ANqGEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Tv734NqGEe-bJfKDgjlCUA" target="_rCLWsNqDEe-bJfKDgjlCUA" source="_OxmVoNqGEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Cw2rINqHEe-bJfKDgjlCUA" target="_r-YgQNqDEe-bJfKDgjlCUA" source="_CRSsMNqFEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EeR2QNqHEe-bJfKDgjlCUA" target="_tD1FYNqDEe-bJfKDgjlCUA" source="_CRSsMNqFEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IEkAcNqHEe-bJfKDgjlCUA" target="_F9hbcNqHEe-bJfKDgjlCUA" source="_r-YgQNqDEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_InXykNqHEe-bJfKDgjlCUA" target="_F9hbcNqHEe-bJfKDgjlCUA" source="_tD1FYNqDEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NErEUNqHEe-bJfKDgjlCUA" target="_un0nsNqDEe-bJfKDgjlCUA" source="_F9hbcNqHEe-bJfKDgjlCUA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4vmMINqHEe-bJfKDgjlCUA" target="_3eiz8NqHEe-bJfKDgjlCUA" source="_un0nsNqDEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_Vcu4QNqDEe-bJfKDgjlCUA" name="Initial" outgoing="_iqPl8NqEEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mLgisNqDEe-bJfKDgjlCUA" name="CreateAccount" incoming="_yl7mkNqEEe-bJfKDgjlCUA" outgoing="_ppvSMNqFEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rCLWsNqDEe-bJfKDgjlCUA" name="Login" incoming="_ucPNUNqEEe-bJfKDgjlCUA _Tv734NqGEe-bJfKDgjlCUA" outgoing="_u_tGwNqEEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_r-YgQNqDEe-bJfKDgjlCUA" name="UpdateAccount" incoming="_Cw2rINqHEe-bJfKDgjlCUA" outgoing="_IEkAcNqHEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_tD1FYNqDEe-bJfKDgjlCUA" name="DeleteAccount" incoming="_EeR2QNqHEe-bJfKDgjlCUA" outgoing="_InXykNqHEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_un0nsNqDEe-bJfKDgjlCUA" name="Logout" incoming="_NErEUNqHEe-bJfKDgjlCUA" outgoing="_4vmMINqHEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_eTbWsNqEEe-bJfKDgjlCUA" incoming="_iqPl8NqEEe-bJfKDgjlCUA _6ViWkNqEEe-bJfKDgjlCUA" outgoing="_ucPNUNqEEe-bJfKDgjlCUA _yl7mkNqEEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_lzpm4NqEEe-bJfKDgjlCUA" name="EnterMail" incoming="_u_tGwNqEEe-bJfKDgjlCUA" outgoing="_xGyIANqEEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_naV34NqEEe-bJfKDgjlCUA" name="EnterPassword" incoming="_xGyIANqEEe-bJfKDgjlCUA" outgoing="_4XFF0NqEEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_rx9_cNqEEe-bJfKDgjlCUA" incoming="_4XFF0NqEEe-bJfKDgjlCUA" outgoing="_6ViWkNqEEe-bJfKDgjlCUA _IYTtwNqFEe-bJfKDgjlCUA _MwLQcNqGEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_CRSsMNqFEe-bJfKDgjlCUA" incoming="_IYTtwNqFEe-bJfKDgjlCUA _qSfUQNqFEe-bJfKDgjlCUA" outgoing="_Cw2rINqHEe-bJfKDgjlCUA _EeR2QNqHEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_jRyRoNqFEe-bJfKDgjlCUA" name="ShowWelcomeScreen" incoming="_ppvSMNqFEe-bJfKDgjlCUA" outgoing="_qSfUQNqFEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Jcn1ANqGEe-bJfKDgjlCUA" name="Reset Password" incoming="_MwLQcNqGEe-bJfKDgjlCUA" outgoing="_QxiNENqGEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_OxmVoNqGEe-bJfKDgjlCUA" name="SendResetLink" incoming="_QxiNENqGEe-bJfKDgjlCUA" outgoing="_Tv734NqGEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_F9hbcNqHEe-bJfKDgjlCUA" incoming="_IEkAcNqHEe-bJfKDgjlCUA _InXykNqHEe-bJfKDgjlCUA" outgoing="_NErEUNqHEe-bJfKDgjlCUA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_3eiz8NqHEe-bJfKDgjlCUA" name="Final" incoming="_4vmMINqHEe-bJfKDgjlCUA"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,15 @@
+·Evaluation and Review (Step 10)
+
+In order to evaluate and review our modeling work, we followed a twofold approach:
+
+1.Verification against modeling and design guidelines, ensuring our metamodel adheres to standard object-oriented and UML/EMF best practices.
+
+2.Instance-based validation, creating a concrete example (an Online Pizza Shop Web Application) to “test” the metamodel with realistic data.
+
+During Task 1.1, we developed a metamodel in Eclipse EMF comprising more than ten metaclasses, each with attributes reflecting real-world web application concepts (e.g., Website, Store, Customer, Order, ShoppingCart, etc.). We then instantiated this metamodel using the EMF tree editor, populating it with sample or “imaginary” data—such as example customers, orders, and products—mimicking a genuine Pizza Shop scenario.This instance model allowed us to:
+
+·Validate structural correctness of our metamodel (e.g., ensuring mandatory relationships exist and attributes are accurately typed)
+·Check consistency of object relationships (e.g., a Customer can have multiple Orders, and each Order references exactly one Payment)
+·Identify possible gaps or ambiguities in the design before coding
+
+Moreover, we could generate Java code automatically from our EMF model, providing an early check that the model is implementable and logically sound. Consequently, Tarea 1.1 fulfills the objectives of Step 10 (Evaluation and Review) in Q-Modelino, as it demonstrates how instance creation and early testing support the validation of our conceptual model.

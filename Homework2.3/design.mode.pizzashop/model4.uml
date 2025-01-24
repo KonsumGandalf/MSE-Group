@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_E7DIQNp7Ee-bJfKDgjlCUA" name="dependencies" visibility="package">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_E7vEwNp7Ee-bJfKDgjlCUA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hJEnwNp8Ee-bJfKDgjlCUA" name="CustomerView">
+    <packagedElement xmi:type="uml:Component" xmi:id="_sFMXENp8Ee-bJfKDgjlCUA" name="OrderDashboard">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_azmWoNqAEe-bJfKDgjlCUA" client="_sFMXENp8Ee-bJfKDgjlCUA" supplier="_FvGwgNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_uasO0Np8Ee-bJfKDgjlCUA" name="RegisterForm">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_FJ2R4Np-Ee-bJfKDgjlCUA" client="_uasO0Np8Ee-bJfKDgjlCUA" supplier="_Hs89QNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_yoVT8Np8Ee-bJfKDgjlCUA" name="OrderForm">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_VlUT4NqAEe-bJfKDgjlCUA" client="_yoVT8Np8Ee-bJfKDgjlCUA" supplier="_FvGwgNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_0XxRQNp8Ee-bJfKDgjlCUA" name="OrderStatusView">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_XZiqkNqAEe-bJfKDgjlCUA" client="_0XxRQNp8Ee-bJfKDgjlCUA" supplier="_HvgaoNqAEe-bJfKDgjlCUA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_jELCgNp8Ee-bJfKDgjlCUA" name="EmployeeView">
+    <packagedElement xmi:type="uml:Component" xmi:id="_3Nh9cNp8Ee-bJfKDgjlCUA" name="OrderDashboard">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_b7snINqAEe-bJfKDgjlCUA" client="_3Nh9cNp8Ee-bJfKDgjlCUA" supplier="_FvGwgNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_4_GBsNp8Ee-bJfKDgjlCUA" name="UpdateOrderForm">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_pmcf4NqAEe-bJfKDgjlCUA" client="_4_GBsNp8Ee-bJfKDgjlCUA" supplier="_FvGwgNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_kBQ84Np8Ee-bJfKDgjlCUA" name="AdminView">
+    <packagedElement xmi:type="uml:Component" xmi:id="_8nUsoNp8Ee-bJfKDgjlCUA" name="UserManagementForm">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_WrI-YNp-Ee-bJfKDgjlCUA" client="_8nUsoNp8Ee-bJfKDgjlCUA" supplier="_Hs89QNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_CAkpQNp9Ee-bJfKDgjlCUA" name="ThirdPartIntegrationView">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_UcHiENp-Ee-bJfKDgjlCUA" client="_CAkpQNp9Ee-bJfKDgjlCUA" supplier="_K28NANp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_k6HQcNp8Ee-bJfKDgjlCUA" name="Controller">
+    <packagedElement xmi:type="uml:Component" xmi:id="_FvGwgNp9Ee-bJfKDgjlCUA" name="OrderManagmentHandler">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_aMm6ANp-Ee-bJfKDgjlCUA" client="_FvGwgNp9Ee-bJfKDgjlCUA" supplier="_PN_FwNp9Ee-bJfKDgjlCUA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_bVGMENp-Ee-bJfKDgjlCUA" client="_FvGwgNp9Ee-bJfKDgjlCUA" supplier="_SVWfUNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_Hs89QNp9Ee-bJfKDgjlCUA" name="AccountHandler">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_cT7L0Np-Ee-bJfKDgjlCUA" client="_Hs89QNp9Ee-bJfKDgjlCUA" supplier="_PN_FwNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_K28NANp9Ee-bJfKDgjlCUA" name="IntegrationHandler">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dQoEoNp-Ee-bJfKDgjlCUA" client="_K28NANp9Ee-bJfKDgjlCUA" supplier="_QypWcNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_HvgaoNqAEe-bJfKDgjlCUA" name="OrderStatusHandler">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_j8Ch0NqAEe-bJfKDgjlCUA" client="_HvgaoNqAEe-bJfKDgjlCUA" supplier="_PN_FwNp9Ee-bJfKDgjlCUA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_lKeq4NqAEe-bJfKDgjlCUA" client="_HvgaoNqAEe-bJfKDgjlCUA" supplier="_SVWfUNp9Ee-bJfKDgjlCUA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_m6d-oNp8Ee-bJfKDgjlCUA" name="Backend">
+    <packagedElement xmi:type="uml:Component" xmi:id="_PN_FwNp9Ee-bJfKDgjlCUA" name="Database"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_QypWcNp9Ee-bJfKDgjlCUA" name="PaymentAPI"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_SVWfUNp9Ee-bJfKDgjlCUA" name="OrderTracking"/>
+  </packagedElement>
+</uml:Model>
